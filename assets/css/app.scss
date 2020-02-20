@@ -1,0 +1,386 @@
+@import './partials/variables';
+@import './partials/mixins';
+
+%headingFont {
+    font-family: $documentText;
+    font-weight: 700;
+}
+
+%bodyFont {
+    font-family: $documentText;
+    font-weight: 300;
+}
+
+%flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    display: none;
+}
+
+.container-width-limit {
+    width: 100%;
+    max-width: 1328px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    width:100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    margin-bottom: 64px;
+
+    h3 {
+        @extend %headingFont;
+        margin-bottom: 16px;
+        font-size: 2.0rem;
+        color: #636363;
+        text-transform: uppercase;
+        text-indent: 0.8rem;
+    }
+}
+
+#header-placeholder {
+    width: 100%;
+    height: 88px;
+
+    div:nth-child(1) {
+        width: 50%;
+        height: 88px;
+        float:left;
+        background: #fff;
+    }
+
+    div:nth-child(2) {
+        width: 50%;
+        height: 88px;
+        float:left;
+        background: $primaryColor;
+    }
+}
+
+#main-header {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+
+.main-header-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+
+    .logo {
+        @extend %flexCenter;
+        justify-content: flex-start;
+        float: left;
+        width: 17.65%;
+        height: 88px;
+        background: #fff;
+
+        img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+    }
+
+    .navigation {
+        @extend %flexCenter;
+        justify-content: flex-end;
+        width: 82.35%;
+        height: 88px;
+        background: $primaryColor;
+
+        nav {
+            @extend %flexCenter;
+
+            .links {
+                padding: 10px 0px;
+                border-right: 1px solid rgba(255, 255, 255, 0.08);
+
+                ul {
+                    margin-bottom: 0;
+                } 
+
+                li {
+                    display: inline;
+                    margin: 0px 20px;
+
+                    a {
+                        @extend %headingFont;
+                        padding: 30px 0px;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color:  #fff;
+
+                        &:hover{
+                            text-decoration: none;
+                            color: #fff;
+                            border-bottom: 4px solid #fff;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 32px
+                    }
+                }
+            }
+
+            .search {
+                margin-left: 32px;
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+}
+
+#carousel-banner {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 88px);
+    min-height: 608px;
+    background: url('../img/carousel-img-01.jpg');
+    background-size: cover;
+    background-position: top right;
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.30);
+    }
+
+    .sticky-btn {
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(100% - 64px);
+        position: fixed;
+        z-index: 5;
+    }
+}
+
+.stack-02 {
+    width: 100%;
+    padding: 144px 0px 232px 0px;
+    background: #f5f5f5;
+}
+
+.card-container {
+    padding-left: 0px;
+    padding-right: 0px;
+
+    .card-wrapper {
+        margin: 5px;
+        padding: 32px 9.94% 16px 9.94%;
+        overflow: auto;
+        background: #fff;
+
+        .card-inside {
+            padding-bottom: 16px;
+
+            .card-counter {
+                @extend %headingFont;
+                font-size: 2.4rem;
+                color: #dbdbdb;
+                text-align: end;
+                margin-bottom: 64px;
+            }
+
+            .card-content {
+                h2 {
+                    @extend %headingFont;
+                    font-size: 2.2rem;
+                    margin: 24px 0px 8px 0px;
+                    color: #414141;
+                }
+
+                p {
+                    @extend %bodyFont;
+                    height: 40px;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    color: #878787;
+                }
+            }
+        }
+
+        footer {
+            padding-top: 16px;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+
+            &:nth-child(1) {
+                width: 50%;
+                float: left;
+
+                a {
+                    @extend %headingFont;
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #0082d6;
+                }
+            }
+
+            &:nth-child(2) {
+                width: 50%;
+                float: left;
+                text-align: end;
+            }
+        }
+    }
+}
+
+.site-footer {
+    width: 100%;
+    background: #e2e2e2;
+
+    .footer-pivot {
+        position: relative;
+
+        .subscription {
+            @extend %flexCenter;
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            position: absolute;
+            top: -88px;
+            width: 100%;
+            padding: 40px 24px;
+            background: $primaryColor;
+    
+            h3 {
+                @extend %headingFont;
+                font-size: 2.8rem;
+                font-weight: 500;
+                color: #fff;
+                margin: 0px 24px 0px 16px;
+            }
+    
+            form {
+                @extend %flexCenter;
+                justify-content: flex-start;
+                align-items: flex-start;
+                width: 100%;
+                max-width: 624px;
+    
+                input {
+                    @extend %bodyFont;
+                    width: 100%;
+                    max-width: 416px;
+                    height: 56px;
+                    border-radius: 8px;
+                    border: 0;
+                    font-size: 2.4rem;
+                    text-indent: 24px;
+                }
+    
+                button {
+                    @extend %flexCenter;
+                    @extend %headingFont;
+                    width: 100%;
+                    max-width: 192px;
+                    height: 56px;
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    border-radius: 8px;
+                    border: 2px solid #fff;
+                    color: #fff;
+                    background: none;
+                    margin-left: 16px;
+                    padding: 0px 24px;
+    
+                    img {
+                        padding-right: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .site-footer-nav {
+        @extend %flexCenter;
+        justify-content: flex-start;
+        align-items: flex-start;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        padding: 88px 0px 32px 0px;
+
+        .footer-col-01 {
+            width: 21.15%;
+
+            img {
+                width: 100%;
+                max-width: 201px;
+                height: auto;
+            }
+        }
+
+        .footer-col-02 {
+            width: 27.56%;
+
+            h2 {
+                @extend %headingFont;
+                display: inline;
+                font-size: 2.0rem;
+                color: #4c4c4c;
+            }
+
+            p {
+                @extend %bodyFont;
+                @include footerText;
+            }
+        }
+        
+        .footer-col-03 {
+            width: 26.28%;
+
+            h2 {
+                @extend %headingFont;
+                display: inline;
+                font-size: 2.0rem;
+                color: #4c4c4c;
+            }
+
+            p {
+                @extend %bodyFont;
+                @include footerText;
+            }
+        }
+        
+        .footer-col-04 {
+            width: 25.01%;
+            text-align: end;
+
+            h2 {
+                font-size: 2.2rem;
+                font-weight: 700;
+                color: #4c4c4c;
+                padding-bottom: 16px;
+            }
+
+            img {
+                padding-left: 16px;
+            }
+        }
+    }
+
+    .copyright {
+        @extend %bodyFont;
+        width: 100%;
+        padding: 24px 0px;
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        text-align: center;
+        font-size: 1.6rem;
+        color: #848484;
+    }
+}

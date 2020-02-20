@@ -1,0 +1,28 @@
+.navigation {
+  /* BEM - Block*/
+  $root: &;
+  background: $primary;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__logo {
+    /* BEM -Element */
+    flex-basis: 50%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  &__links {
+    /* BEM - Element */
+    #{$root}__item {
+      /* BEM - Modifier */
+      color: yellow;
+      &--active {
+        color: red;
+      }
+    }
+  }
+}
