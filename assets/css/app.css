@@ -15,7 +15,7 @@ html, body {
   font-size: 62.5%;
 }
 
-.section-heading h3, .main-header-container .navigation nav .links li a, .card-container .card-wrapper .card-inside .card-counter, .card-container .card-wrapper .card-inside .card-content h2, .card-container .card-wrapper footer:nth-child(1) a, .site-footer .footer-pivot .subscription h3, .site-footer .footer-pivot .subscription form button, .site-footer .site-footer-nav .footer-col-02 h2, .site-footer .site-footer-nav .footer-col-03 h2 {
+.section-heading h3, .main-header-container .navigation nav .links li a, .card-container .card-wrapper .card-inside .card-counter, .card-container .card-wrapper .card-inside .card-content h2, .card-container .card-wrapper footer div:nth-child(1) a, .site-footer .footer-pivot .subscription h3, .site-footer .footer-pivot .subscription form button, .site-footer .site-footer-nav .footer-col-02 h2, .site-footer .site-footer-nav .footer-col-03 h2 {
   font-family: "Muli", sans-serif;
   font-weight: 700;
 }
@@ -234,19 +234,19 @@ h1 {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.card-container .card-wrapper footer:nth-child(1) {
+.card-container .card-wrapper footer div:nth-child(1) {
   width: 50%;
   float: left;
 }
 
-.card-container .card-wrapper footer:nth-child(1) a {
+.card-container .card-wrapper footer div:nth-child(1) a {
   font-size: 1.4rem;
   text-transform: uppercase;
   text-decoration: none;
   color: #0082d6;
 }
 
-.card-container .card-wrapper footer:nth-child(2) {
+.card-container .card-wrapper footer div:nth-child(2) {
   width: 50%;
   float: left;
   text-align: end;
