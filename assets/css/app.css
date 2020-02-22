@@ -213,6 +213,12 @@ h1 {
   margin-bottom: 64px;
 }
 
+.stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content svg {
+  width: 64px;
+  height: auto;
+  fill: #022379;
+}
+
 .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content h2 {
   font-size: 2.2rem;
   margin: 24px 0px 8px 0px;
@@ -243,10 +249,56 @@ h1 {
   color: #0082d6;
 }
 
+.stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(1) a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(2) {
   width: 50%;
   float: left;
   text-align: end;
+}
+
+.stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(2) svg {
+  width: 22px;
+  height: auto;
+  fill: #0082d6;
+}
+
+.stack-02-cards .stack-02-cards-wrapper:hover {
+  cursor: pointer;
+  background: #0082d6;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.stack-02-cards .stack-02-cards-wrapper:hover > .stack-02-cards-body > .stack-02-cards-counter {
+  color: #fff;
+}
+
+.stack-02-cards .stack-02-cards-wrapper:hover > .stack-02-cards-body > .stack-02-cards-content svg {
+  fill: #fff;
+}
+
+.stack-02-cards .stack-02-cards-wrapper:hover > .stack-02-cards-body > .stack-02-cards-content h2 {
+  color: #fff;
+}
+
+.stack-02-cards .stack-02-cards-wrapper:hover > .stack-02-cards-body > .stack-02-cards-content p {
+  color: #fff;
+}
+
+.stack-02-cards .stack-02-cards-wrapper:hover > .stack-02-cards-body ~ .stack-02-cards-footer {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.stack-02-cards .stack-02-cards-wrapper:hover > .stack-02-cards-body ~ .stack-02-cards-footer a {
+  color: #fff;
+}
+
+.stack-02-cards .stack-02-cards-wrapper:hover > .stack-02-cards-body ~ .stack-02-cards-footer svg {
+  fill: #fff;
 }
 
 #mainFooter {

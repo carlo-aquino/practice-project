@@ -174,6 +174,12 @@
             }
 
             .stack-02-cards-content {
+                svg {
+                    width: 64px;
+                    height: auto;
+                    fill: $primaryColor;
+                }
+
                 h2 {
                     @extend %headingFont;
                     font-size: 2.2rem;
@@ -205,16 +211,63 @@
                         font-size: 1.4rem;
                         text-transform: uppercase;
                         text-decoration: none;
-                        color: #0082d6;
+                        color: $secondaryColor;
+
+                        &:hover {
+                            color: #fff;
+                            text-decoration: underline;
+                        }
                     }
+
+                    
                 }
 
                 &:nth-child(2) {
                     width: 50%;
                     float: left;
                     text-align: end;
+
+                    svg {
+                        width: 22px;
+                        height: auto;
+                        fill: $secondaryColor;
+                    }
                 }
             }
+        }
+
+        &:hover {
+            cursor: pointer;
+            background: $secondaryColor;
+            transition: all 0.5s ease;
+        }
+
+        &:hover > .stack-02-cards-body > .stack-02-cards-counter {
+            color: #fff;
+        }
+
+        &:hover > .stack-02-cards-body > .stack-02-cards-content svg {
+            fill: #fff;
+        }
+
+        &:hover > .stack-02-cards-body > .stack-02-cards-content h2 {
+            color: #fff;
+        }
+
+        &:hover > .stack-02-cards-body > .stack-02-cards-content p {
+            color: #fff;
+        }
+
+        &:hover > .stack-02-cards-body ~ .stack-02-cards-footer {
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        &:hover > .stack-02-cards-body ~ .stack-02-cards-footer a {
+            color: #fff;
+        }
+
+        &:hover > .stack-02-cards-body ~ .stack-02-cards-footer svg {
+            fill: #fff;
         }
     }
 }
