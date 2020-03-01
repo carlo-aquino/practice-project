@@ -47,7 +47,7 @@ h1 {
   font-weight: 300;
 }
 
-.mainHeader-container .mainHeader-logo, .mainHeader-container .mainHeader-navigation, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container, .carouselBanner .carouselBanner-content .carouselBanner-content-slider, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button, .carouselBanner .carouselBanner-arrows, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(2), #mainFooter .mainFooter-container .mainFooter-subscription, #mainFooter .mainFooter-container .mainFooter-subscription form, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 {
+.mainHeader-container .mainHeader-logo, .mainHeader-container .mainHeader-navigation, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container, .carouselBanner .carouselBanner-content .carouselBanner-content-slider, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(2), #mainFooter .mainFooter-container .mainFooter-subscription, #mainFooter .mainFooter-container .mainFooter-subscription form, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,8 +192,7 @@ h1 {
 
 .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body {
   position: absolute;
-  z-index: 5;
-  margin-left: 16px;
+  z-index: 3;
 }
 
 .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body h2 {
@@ -247,20 +246,22 @@ h1 {
 
 .carouselBanner .carouselBanner-arrows {
   position: relative;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  z-index: 3;
+  top: 50%;
+  z-index: 5;
 }
 
 .carouselBanner .carouselBanner-arrows img:nth-child(1) {
   position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 7%;
   cursor: pointer;
 }
 
 .carouselBanner .carouselBanner-arrows img:nth-child(2) {
   position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 7%;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);

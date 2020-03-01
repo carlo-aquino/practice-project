@@ -16,7 +16,7 @@ for (i=0; i<=slide.length-1; i++) {
 slider.style.transform = "translateX(" + (-100 / slide.length) + "%)";
 
 // PREV button
-document.querySelector("#prev").addEventListener("click", function() {
+document.querySelector("#carouselBanner-prev_BTN").addEventListener("click", function() {
     if(counter >= 0) {
         slider.classList.add("slider-transition");
         slider.style.transform += "translateX(" + (100 / slide.length) + "%)";
@@ -25,7 +25,7 @@ document.querySelector("#prev").addEventListener("click", function() {
 });
 
 // NEXT button
-document.querySelector("#next").addEventListener("click", function() {
+document.querySelector("#carouselBanner-next_BTN").addEventListener("click", function() {
     if(counter <= slide.length-2) {
         slider.classList.add("slider-transition");
         slider.style.transform += "translateX(" + (-100 / slide.length) + "%)";

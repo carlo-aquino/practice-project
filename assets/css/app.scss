@@ -149,8 +149,7 @@
 
                 .carouselBanner-content-body {
                     position: absolute;
-                    z-index: 5;
-                    margin-left: 16px;
+                    z-index: 3;
 
                     h2 {
                         @extend %headingFont;
@@ -211,21 +210,20 @@
 
     .carouselBanner-arrows {
         position: relative;
-        @extend %flexCenter;
-        // justify-content: flex-start;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        z-index: 3;
+        // @extend %flexCenter;
+        top: 50%;
+        z-index: 5;
 
         img:nth-child(1) {
             position: absolute;
+            transform: translateY(-50%);
             left: 7%;
             cursor: pointer;
         }
 
         img:nth-child(2) {
             position: absolute;
+            transform: translateY(-50%);
             right: 7%;
             transform: rotate(180deg);
             cursor: pointer;
