@@ -37,17 +37,17 @@ h1 {
   text-indent: 0.8rem;
 }
 
-.section-heading h3, .mainHeader-container .mainHeader-navigation nav .mainHeader-links li a, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content h2, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(1) a, #mainFooter .mainFooter-container .mainFooter-subscription h3, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav .mainFooter-nav-col-02 h2, #mainFooter .mainFooter-nav .mainFooter-nav-col-03 h2, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 h2 {
+.section-heading h3, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links li a, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body h2, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content h2, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(1) a, #mainFooter .mainFooter-container .mainFooter-subscription h3, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav .mainFooter-nav-col-02 h2, #mainFooter .mainFooter-nav .mainFooter-nav-col-03 h2, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 h2 {
   font-family: "Muli", sans-serif;
   font-weight: 700;
 }
 
-.stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content p, #mainFooter .mainFooter-container .mainFooter-subscription form input, #mainFooter .mainFooter-nav .mainFooter-nav-col-02 p, #mainFooter .mainFooter-nav .mainFooter-nav-col-03 p, #mainFooter .mainFooter-copyright {
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body p, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content p, #mainFooter .mainFooter-container .mainFooter-subscription form input, #mainFooter .mainFooter-nav .mainFooter-nav-col-02 p, #mainFooter .mainFooter-nav .mainFooter-nav-col-03 p, #mainFooter .mainFooter-copyright {
   font-family: "Muli", sans-serif;
   font-weight: 300;
 }
 
-.mainHeader-container .mainHeader-logo, .mainHeader-container .mainHeader-navigation, .mainHeader-container .mainHeader-navigation nav, #mainFooter .mainFooter-container .mainFooter-subscription, #mainFooter .mainFooter-container .mainFooter-subscription form, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav {
+.mainHeader-container .mainHeader-logo, .mainHeader-container .mainHeader-navigation, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container, .carouselBanner .carouselBanner-content .carouselBanner-content-slider, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button, .carouselBanner .carouselBanner-arrows, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(2), #mainFooter .mainFooter-container .mainFooter-subscription, #mainFooter .mainFooter-container .mainFooter-subscription form, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,6 +57,13 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.slider-transition {
+  -webkit-transition: 400ms -webkit-transform ease-in-out;
+  transition: 400ms -webkit-transform ease-in-out;
+  transition: 400ms transform ease-in-out;
+  transition: 400ms transform ease-in-out, 400ms -webkit-transform ease-in-out;
 }
 
 #headerPlaceholder {
@@ -116,21 +123,21 @@ h1 {
   background: #022379;
 }
 
-.mainHeader-container .mainHeader-navigation nav .mainHeader-links {
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links {
   padding: 10px 0px;
   border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.mainHeader-container .mainHeader-navigation nav .mainHeader-links ul {
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul {
   margin-bottom: 0;
 }
 
-.mainHeader-container .mainHeader-navigation nav .mainHeader-links li {
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links li {
   display: inline;
   margin: 0px 20px;
 }
 
-.mainHeader-container .mainHeader-navigation nav .mainHeader-links li a {
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links li a {
   padding: 30px 0px;
   font-size: 1.6rem;
   font-weight: 600;
@@ -139,21 +146,21 @@ h1 {
   color: #fff;
 }
 
-.mainHeader-container .mainHeader-navigation nav .mainHeader-links li a:hover {
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links li a:hover {
   text-decoration: none;
   color: #fff;
   border-bottom: 4px solid #fff;
 }
 
-.mainHeader-container .mainHeader-navigation nav .mainHeader-links li:last-child {
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links li:last-child {
   margin-right: 32px;
 }
 
-.mainHeader-container .mainHeader-navigation nav .mainHeader-search {
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-search {
   margin-left: 32px;
 }
 
-.mainHeader-container .mainHeader-navigation nav .mainHeader-search img {
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-search img {
   width: 32px;
   height: 32px;
 }
@@ -163,16 +170,101 @@ h1 {
   width: 100%;
   height: calc(100vh - 88px);
   min-height: 608px;
-  background: url("../img/carousel-img-01.jpg");
-  background-size: cover;
-  background-position: top right;
 }
 
-.carouselBanner .carouselBanner-overlay {
+.carouselBanner .carouselBanner-content {
   position: absolute;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider {
+  height: 100%;
+}
+
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body {
+  position: absolute;
+  z-index: 5;
+  margin-left: 16px;
+}
+
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body h2 {
+  max-width: 640px;
+  font-size: 5.6rem;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+  color: #fff;
+}
+
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body p {
+  max-width: 612px;
+  font-size: 2.0rem;
+  line-height: 3.2rem;
+  padding-bottom: 32px;
+  color: #fff;
+}
+
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button {
+  justify-self: flex-start;
+  width: 100%;
+  max-width: 320px;
+  height: 64px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: 0px solid #fff;
+  background: #0082d6;
+  color: #fff;
+}
+
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-overlay {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content_IMG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../img/carousel-img-01.jpg");
+  background-size: cover;
+  background-position: top right;
+  z-index: 1;
+}
+
+.carouselBanner .carouselBanner-arrows {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 3;
+}
+
+.carouselBanner .carouselBanner-arrows img:nth-child(1) {
+  position: absolute;
+  left: 7%;
+  cursor: pointer;
+}
+
+.carouselBanner .carouselBanner-arrows img:nth-child(2) {
+  position: absolute;
+  right: 7%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .carouselBanner .carouselBanner-sticky-btn {
@@ -181,7 +273,8 @@ h1 {
           transform: translateY(-50%);
   left: calc(100% - 64px);
   position: fixed;
-  z-index: 5;
+  z-index: 10;
+  border: 1px solid #0078c5;
 }
 
 .stack-02 {
@@ -207,9 +300,11 @@ h1 {
 }
 
 .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-size: 2.4rem;
   color: #dbdbdb;
-  text-align: end;
   margin-bottom: 64px;
 }
 
@@ -235,6 +330,7 @@ h1 {
 .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer {
   padding-top: 16px;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
+  overflow: auto;
 }
 
 .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(1) {
@@ -255,9 +351,11 @@ h1 {
 }
 
 .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(2) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 50%;
   float: left;
-  text-align: end;
 }
 
 .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(2) svg {
@@ -311,9 +409,9 @@ h1 {
 }
 
 #mainFooter .mainFooter-container .mainFooter-subscription {
-  -ms-flex-flow: row nowrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   position: absolute;
   top: -88px;
@@ -376,9 +474,9 @@ h1 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-flow: row wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   padding: 88px 0px 32px 0px;
 }
@@ -430,8 +528,14 @@ h1 {
 }
 
 #mainFooter .mainFooter-nav .mainFooter-nav-col-04 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   width: 25.01%;
-  text-align: end;
 }
 
 #mainFooter .mainFooter-nav .mainFooter-nav-col-04 h2 {

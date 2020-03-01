@@ -17,6 +17,10 @@
     justify-content: center;
 }
 
+.slider-transition {
+    transition: 400ms transform ease-in-out;
+}
+
 #headerPlaceholder {
     width: 100%;
     height: 88px;
@@ -43,7 +47,6 @@
     top: 0px;
     width: 100%;
 }
-
 
 .mainHeader-container {
     display: -ms-flexbox;
@@ -72,7 +75,7 @@
         height: 88px;
         background: $primaryColor;
 
-        nav {
+        .mainHeader-navigation-container {
             @extend %flexCenter;
 
             .mainHeader-links {
@@ -126,15 +129,107 @@
     width: 100%;
     height: calc(100vh - 88px);
     min-height: 608px;
-    background: url('../img/carousel-img-01.jpg');
-    background-size: cover;
-    background-position: top right;
 
-    .carouselBanner-overlay {
+    .carouselBanner-content {
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.30);
+        overflow: hidden;
+
+        .carouselBanner-content-slider {
+            @extend %flexCenter;
+            height: 100%;
+
+            .carouselBanner-content-slide {
+                @extend %flexCenter;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+
+                .carouselBanner-content-body {
+                    position: absolute;
+                    z-index: 5;
+                    margin-left: 16px;
+
+                    h2 {
+                        @extend %headingFont;
+                        max-width: 640px;
+                        font-size: 5.6rem;
+                        text-transform: uppercase;
+                        padding-bottom: 16px;
+                        color: #fff;
+                    }
+        
+                    p {
+                        @extend %bodyFont;
+                        max-width: 612px;
+                        font-size: 2.0rem;
+                        line-height: 3.2rem;
+                        padding-bottom: 32px;
+                        color: #fff;
+                    }
+        
+                    button {
+                        @extend %flexCenter;
+                        @extend %headingFont;
+                        justify-self: flex-start;
+                        width: 100%;
+                        max-width: 320px;
+                        height: 64px;
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        border-radius: 8px;
+                        border: 0px solid #fff;
+                        background: $secondaryColor;
+                        color: #fff;
+                    }
+                }
+
+                .carouselBanner-overlay {
+                    position: absolute;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.30);
+                    z-index: 2;
+                }
+
+                .carouselBanner-content_IMG {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: url('../img/carousel-img-01.jpg');
+                    background-size: cover;
+                    background-position: top right;
+                    z-index: 1;
+                }
+            }
+        } 
+    }
+
+    .carouselBanner-arrows {
+        position: relative;
+        @extend %flexCenter;
+        // justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 3;
+
+        img:nth-child(1) {
+            position: absolute;
+            left: 7%;
+            cursor: pointer;
+        }
+
+        img:nth-child(2) {
+            position: absolute;
+            right: 7%;
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
     }
 
     .carouselBanner-sticky-btn {
@@ -142,7 +237,8 @@
         transform: translateY(-50%);
         left: calc(100% - 64px);
         position: fixed;
-        z-index: 5;
+        z-index: 10;
+        border: 1px solid #0078c5;
     }
 }
 
@@ -167,9 +263,10 @@
 
             .stack-02-cards-counter {
                 @extend %headingFont;
+                @extend %flexCenter;
+                justify-content: flex-end;
                 font-size: 2.4rem;
                 color: #dbdbdb;
-                text-align: end;
                 margin-bottom: 64px;
             }
 
@@ -200,6 +297,7 @@
         .stack-02-cards-footer {
             padding-top: 16px;
             border-top: 1px solid rgba(0, 0, 0, 0.08);
+            overflow: auto;
 
             div {
                 &:nth-child(1) {
@@ -223,9 +321,10 @@
                 }
 
                 &:nth-child(2) {
+                    @extend %flexCenter;
+                    justify-content: flex-end;
                     width: 50%;
                     float: left;
-                    text-align: end;
 
                     svg {
                         width: 22px;
@@ -281,7 +380,6 @@
 
         .mainFooter-subscription {
             @extend %flexCenter;
-            -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
             position: absolute;
             top: -88px;
@@ -343,7 +441,6 @@
         @extend %flexCenter;
         justify-content: flex-start;
         align-items: flex-start;
-        -ms-flex-flow: row wrap;
         flex-flow: row wrap;
         padding: 88px 0px 32px 0px;
 
@@ -390,8 +487,10 @@
         }
         
         .mainFooter-nav-col-04 {
+            @extend %flexCenter;
+            justify-content: flex-end;
+            flex-flow: row wrap;
             width: 25.01%;
-            text-align: end;
 
             h2 {
                 @extend %headingFont;
