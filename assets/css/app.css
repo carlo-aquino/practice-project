@@ -10,6 +10,7 @@ html, body {
   width: 100%;
   height: 100%;
   font-size: 62.5%;
+  background: #f5f5f5;
 }
 
 h1 {
@@ -37,17 +38,17 @@ h1 {
   text-indent: 0.8rem;
 }
 
-.section-heading h3, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links li a, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body h2, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content h2, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(1) a, #mainFooter .mainFooter-container .mainFooter-subscription h3, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav .mainFooter-nav-col-02 h2, #mainFooter .mainFooter-nav .mainFooter-nav-col-03 h2, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 h2 {
+.section-heading h3, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links li a, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body h2, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content h2, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(1) a, .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container h2, .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container .stack-04-cards-leftColumn-content-link a, .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container h2, .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container .stack-04-cards-rightColumn-content-link a, #mainFooter .mainFooter-container .mainFooter-subscription h3, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav .mainFooter-nav-col-02 h2, #mainFooter .mainFooter-nav .mainFooter-nav-col-03 h2, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 h2 {
   font-family: "Muli", sans-serif;
   font-weight: 700;
 }
 
-.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body p, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content p, #mainFooter .mainFooter-container .mainFooter-subscription form input, #mainFooter .mainFooter-nav .mainFooter-nav-col-02 p, #mainFooter .mainFooter-nav .mainFooter-nav-col-03 p, #mainFooter .mainFooter-copyright {
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body p, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content p, .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container p, .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container p, #mainFooter .mainFooter-container .mainFooter-subscription form input, #mainFooter .mainFooter-nav .mainFooter-nav-col-02 p, #mainFooter .mainFooter-nav .mainFooter-nav-col-03 p, #mainFooter .mainFooter-copyright {
   font-family: "Muli", sans-serif;
   font-weight: 300;
 }
 
-.mainHeader-container .mainHeader-logo, .mainHeader-container .mainHeader-navigation, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container, .carouselBanner .carouselBanner-content .carouselBanner-content-slider, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(2), #mainFooter .mainFooter-container .mainFooter-subscription, #mainFooter .mainFooter-container .mainFooter-subscription form, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 {
+.mainHeader-container .mainHeader-logo, .mainHeader-container .mainHeader-navigation, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container, .carouselBanner .carouselBanner-content .carouselBanner-content-slider, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(2), .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-left, .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-right, .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container .stack-04-cards-leftColumn-content-link, .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container .stack-04-cards-rightColumn-content-link, #mainFooter .mainFooter-container .mainFooter-subscription, #mainFooter .mainFooter-container .mainFooter-subscription form, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,8 +282,7 @@ h1 {
 
 .stack-02 {
   width: 100%;
-  padding: 144px 0px 232px 0px;
-  background: #f5f5f5;
+  padding: 144px 0px;
 }
 
 .stack-02-cards {
@@ -399,6 +399,222 @@ h1 {
 
 .stack-02-cards .stack-02-cards-wrapper:hover > .stack-02-cards-body ~ .stack-02-cards-footer svg {
   fill: #fff;
+}
+
+.stack-03 {
+  width: 100%;
+}
+
+.stack-03 .stack-03-videoSlider {
+  position: relative;
+  width: 100%;
+  height: 544px;
+  background: #ececec;
+}
+
+.stack-03 .stack-03-videoSlider .stack-03-videoSlider-container {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.stack-03 .stack-03-videoSlider .stack-03-videoSlider-container .stack-03-videoSlider-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500%;
+  height: 100%;
+  -webkit-transform: translateX(-1410px);
+          transform: translateX(-1410px);
+}
+
+.stack-03 .stack-03-videoSlider .stack-03-videoSlider-container .stack-03-videoSlider-slider .stack-03-videoSlider-slider-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15.6029%;
+  margin: 0 0.5319%;
+  background: #ccc;
+}
+
+.stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+}
+
+.stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-left {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 11%;
+  height: 100%;
+  padding-right: 40px;
+  background: rgba(2, 35, 121, 0.8);
+}
+
+.stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-right {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 11%;
+  height: 100%;
+  padding-left: 40px;
+  background: rgba(2, 35, 121, 0.8);
+}
+
+.stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-right img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.stack-04 {
+  width: 100%;
+  padding: 144px 0px 232px 0px;
+}
+
+.stack-04-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+}
+
+.stack-04-cards .stack-04-cards-leftColumn {
+  width: 54.1176%;
+  background: #fff;
+}
+
+.stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-thumb {
+  width: 100%;
+}
+
+.stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-thumb img {
+  width: 100%;
+  height: auto;
+}
+
+.stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content {
+  padding: 40px;
+}
+
+.stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container {
+  width: 100%;
+}
+
+.stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container h2 {
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  font-weight: 600;
+  color: #022379;
+  margin-bottom: 16px;
+}
+
+.stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container p {
+  font-size: 2.0rem;
+  line-height: 3.0rem;
+  max-height: 56px;
+  overflow: hidden;
+  color: #848484;
+  margin-bottom: 24px;
+}
+
+.stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container .stack-04-cards-leftColumn-content-link {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container .stack-04-cards-leftColumn-content-link a {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #0082d6;
+}
+
+.stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container .stack-04-cards-leftColumn-content-link img {
+  margin-left: 8px;
+}
+
+.stack-04-cards .stack-04-cards-rightColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 44.1176%;
+}
+
+.stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: #fff;
+}
+
+.stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-thumb {
+  width: 33%;
+  background: #ccc;
+}
+
+.stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content {
+  width: 67%;
+  padding: 19px 24px;
+}
+
+.stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container {
+  width: 100%;
+}
+
+.stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container h2 {
+  font-size: 2.0rem;
+  line-height: 3.0rem;
+  font-weight: 600;
+  color: #022379;
+  margin-bottom: 8px;
+}
+
+.stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container p {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  max-height: 48px;
+  overflow: hidden;
+  color: #848484;
+  margin-bottom: 16px;
+}
+
+.stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container .stack-04-cards-rightColumn-content-link {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container .stack-04-cards-rightColumn-content-link a {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #0082d6;
+}
+
+.stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container .stack-04-cards-rightColumn-content-link img {
+  margin-left: 8px;
 }
 
 #mainFooter {
