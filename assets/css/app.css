@@ -178,6 +178,7 @@ h1 {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0px;
   overflow: hidden;
 }
 
@@ -186,6 +187,9 @@ h1 {
 }
 
 .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   position: relative;
   width: 100%;
   height: 100%;
@@ -193,7 +197,6 @@ h1 {
 }
 
 .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body {
-  position: absolute;
   z-index: 3;
 }
 
@@ -230,6 +233,7 @@ h1 {
 .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-overlay {
   position: absolute;
   top: 0px;
+  left: 0px;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
@@ -238,6 +242,8 @@ h1 {
 
 .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content_IMG {
   position: absolute;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 100%;
   background: url("../img/carousel-img-01.jpg");
@@ -495,7 +501,7 @@ h1 {
 }
 
 .stack-04-cards .stack-04-cards-leftColumn {
-  width: 54.1176%;
+  width: 51.1176%;
   background: #fff;
 }
 
@@ -559,7 +565,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  width: 44.1176%;
+  width: 47.1176%;
 }
 
 .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card {
@@ -577,7 +583,7 @@ h1 {
 
 .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content {
   width: 67%;
-  padding: 19px 24px;
+  padding: 18px 20px;
 }
 
 .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container {
@@ -586,16 +592,18 @@ h1 {
 
 .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container h2 {
   font-size: 2.0rem;
-  line-height: 3.0rem;
   font-weight: 600;
+  line-height: 2.9rem;
+  max-height: 56px;
+  overflow: hidden;
   color: #022379;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container p {
   font-size: 1.8rem;
   line-height: 2.6rem;
-  max-height: 48px;
+  max-height: 50px;
   overflow: hidden;
   color: #848484;
   margin-bottom: 16px;

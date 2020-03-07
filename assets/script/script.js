@@ -13,7 +13,7 @@ for (i=0; i<=slide.length-1; i++) {
 }
 
 // setting the initial position of the slider
-slider.style.transform = "translateX(" + (-100 / slide.length) + "%)";
+// slider.style.transform = "translateX(" + (-100 / slide.length) + "%)";
 
 // PREV button
 document.querySelector("#carouselBanner-prev_BTN").addEventListener("click", function() {

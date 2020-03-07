@@ -136,6 +136,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
+        top: 0px;
         overflow: hidden;
 
         .carouselBanner-content-slider {
@@ -144,13 +145,13 @@
 
             .carouselBanner-content-slide {
                 @extend %flexCenter;
+                justify-content: flex-start;
                 position: relative;
                 width: 100%;
                 height: 100%;
                 overflow: auto;
 
                 .carouselBanner-content-body {
-                    position: absolute;
                     z-index: 3;
 
                     h2 {
@@ -191,6 +192,7 @@
                 .carouselBanner-overlay {
                     position: absolute;
                     top: 0px;
+                    left: 0px;
                     width: 100%;
                     height: 100%;
                     background: rgba(0, 0, 0, 0.30);
@@ -199,6 +201,8 @@
 
                 .carouselBanner-content_IMG {
                     position: absolute;
+                    top: 0px;
+                    left: 0px;
                     width: 100%;
                     height: 100%;
                     background: url('../img/carousel-img-01.jpg');
@@ -445,7 +449,7 @@
     width: 100%;
 
     .stack-04-cards-leftColumn {
-        width: 54.1176%;
+        width: 51.1176%;
         background: #fff;
 
         .stack-04-cards-leftColumn-thumb {
@@ -505,7 +509,7 @@
         display: flex;
         align-content: space-between;
         flex-flow: row wrap;
-        width: 44.1176%;
+        width: 47.1176%;
 
         .stack-04-cards-rightColumn-card {
             display: flex;
@@ -524,7 +528,7 @@
 
             .stack-04-cards-rightColumn-card-content {
                 width: 67%;
-                padding: 19px 24px;
+                padding: 18px 20px;
 
                 .stack-04-cards-rightColumn-card-content-container {
                     width: 100%;
@@ -532,17 +536,19 @@
                     h2 {
                         @extend %headingFont;
                         font-size: 2.0rem;
-                        line-height: 3.0rem;
                         font-weight: 600;
+                        line-height: 2.9rem;
+                        max-height: 56px;
+                        overflow: hidden;
                         color: $primaryColor;
-                        margin-bottom: 8px;
+                        margin-bottom: 5px;
                     }
     
                     p {
                         @extend %bodyFont;
                         font-size: 1.8rem;
                         line-height: 2.6rem;
-                        max-height: 48px;
+                        max-height: 50px;
                         overflow: hidden;
                         color: #848484;
                         margin-bottom: 16px;
