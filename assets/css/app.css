@@ -38,7 +38,7 @@ h1 {
   text-indent: 0.8rem;
 }
 
-.section-heading h3, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links li a, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body h2, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content h2, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(1) a, .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container h2, .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container .stack-04-cards-leftColumn-content-link a, .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container h2, .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container .stack-04-cards-rightColumn-content-link a, #mainFooter .mainFooter-container .mainFooter-subscription h3, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav .mainFooter-nav-col-02 h2, #mainFooter .mainFooter-nav .mainFooter-nav-col-03 h2, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 h2 {
+.section-heading h3, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links li a, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body h2, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content h2, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(1) a, .stack-03 .stack-03-videoSlider .stack-03-videoSlider-container .stack-03-videoSlider-slider .stack-03-videoSlider-slider-content h2, .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container h2, .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container .stack-04-cards-leftColumn-content-link a, .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container h2, .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container .stack-04-cards-rightColumn-content-link a, #mainFooter .mainFooter-container .mainFooter-subscription h3, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav .mainFooter-nav-col-02 h2, #mainFooter .mainFooter-nav .mainFooter-nav-col-03 h2, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 h2 {
   font-family: "Muli", sans-serif;
   font-weight: 700;
 }
@@ -48,7 +48,7 @@ h1 {
   font-weight: 300;
 }
 
-.mainHeader-container .mainHeader-logo, .mainHeader-container .mainHeader-navigation, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container, .carouselBanner .carouselBanner-content .carouselBanner-content-slider, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(2), .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-left, .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-right, .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container .stack-04-cards-leftColumn-content-link, .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container .stack-04-cards-rightColumn-content-link, #mainFooter .mainFooter-container .mainFooter-subscription, #mainFooter .mainFooter-container .mainFooter-subscription form, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 {
+.mainHeader-container .mainHeader-logo, .mainHeader-container .mainHeader-navigation, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container, .carouselBanner .carouselBanner-content .carouselBanner-content-slider, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(2), .stack-03 .stack-03-videoSlider .stack-03-videoSlider-container .stack-03-videoSlider-slider .stack-03-videoSlider-slider-content, .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-left, .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-right, .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container .stack-04-cards-leftColumn-content-link, .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container .stack-04-cards-rightColumn-content-link, #mainFooter .mainFooter-container .mainFooter-subscription, #mainFooter .mainFooter-container .mainFooter-subscription form, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,7 +415,6 @@ h1 {
   position: relative;
   width: 100%;
   height: 544px;
-  background: #ececec;
 }
 
 .stack-03 .stack-03-videoSlider .stack-03-videoSlider-container {
@@ -435,12 +434,12 @@ h1 {
 }
 
 .stack-03 .stack-03-videoSlider .stack-03-videoSlider-container .stack-03-videoSlider-slider .stack-03-videoSlider-slider-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 15.6029%;
-  margin: 0 0.5319%;
   background: #ccc;
+}
+
+.stack-03 .stack-03-videoSlider .stack-03-videoSlider-container .stack-03-videoSlider-slider .stack-03-videoSlider-slider-content h2 {
+  font-size: 3.2rem;
+  color: #000;
 }
 
 .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls {
@@ -460,17 +459,21 @@ h1 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 11%;
+  width: 14.9%;
   height: 100%;
   padding-right: 40px;
   background: rgba(2, 35, 121, 0.8);
+}
+
+.stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-left img {
+  cursor: pointer;
 }
 
 .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-right {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 11%;
+  width: 14.9%;
   height: 100%;
   padding-left: 40px;
   background: rgba(2, 35, 121, 0.8);
@@ -479,6 +482,7 @@ h1 {
 .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-right img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .stack-04 {
@@ -583,7 +587,7 @@ h1 {
 
 .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content {
   width: 67%;
-  padding: 18px 20px;
+  padding: 18px 24px;
 }
 
 .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container {

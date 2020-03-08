@@ -382,7 +382,6 @@
         position: relative;
         width: 100%;
         height: 544px;
-        background: #ececec;
 
         .stack-03-videoSlider-container {
             width: 100%;
@@ -396,10 +395,14 @@
                 transform: translateX(-1410px);
 
                 .stack-03-videoSlider-slider-content {
-                    display: flex;
-                    width: 15.6029%;
-                    margin: 0 0.5319%;
+                    @extend %flexCenter;
                     background: #ccc;
+
+                    h2 {
+                        @extend %headingFont;
+                        font-size: 3.2rem;
+                        color: #000;
+                    }
                 }
             }
         }
@@ -415,22 +418,27 @@
             .stack-03-videoSlider-controls-left {
                 @extend %flexCenter;
                 justify-content: flex-end;
-                width: 11%;
+                width: 14.9%;
                 height: 100%;
                 padding-right: 40px;
                 background: rgba(2, 35, 121, 0.8);
+
+                img {
+                    cursor: pointer;
+                }
             }
 
             .stack-03-videoSlider-controls-right {
                 @extend %flexCenter;
                 justify-content: flex-start;
-                width: 11%;
+                width: 14.9%;
                 height: 100%;
                 padding-left: 40px;
                 background: rgba(2, 35, 121, 0.8);
 
                 img {
                     transform: rotate(180deg);
+                    cursor: pointer;
                 }
             }
         }
@@ -528,7 +536,7 @@
 
             .stack-04-cards-rightColumn-card-content {
                 width: 67%;
-                padding: 18px 20px;
+                padding: 18px 24px;
 
                 .stack-04-cards-rightColumn-card-content-container {
                     width: 100%;
