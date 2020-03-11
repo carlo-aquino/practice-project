@@ -401,23 +401,23 @@
                     h2 {
                         @extend %headingFont;
                         font-size: 3.2rem;
-                        color: #ccc;
+                        color: #ececec;
                     }
                 }
             }
         }
 
         .stack-03-videoSlider-controls {
-            position: absolute;
             display: flex;
             justify-content: space-between;
-            width: 100%;
-            height: 100%;
-            top: 0%;
+            // width: 100%;
+            // height: 100%;
 
             .stack-03-videoSlider-controls-left {
                 @extend %flexCenter;
                 justify-content: flex-end;
+                position: absolute;
+                top: 0;
                 width: 14.9%;
                 height: 100%;
                 padding-right: 40px;
@@ -431,6 +431,9 @@
             .stack-03-videoSlider-controls-right {
                 @extend %flexCenter;
                 justify-content: flex-start;
+                position: absolute;
+                top: 0;
+                right: 0;
                 width: 14.9%;
                 height: 100%;
                 padding-left: 40px;

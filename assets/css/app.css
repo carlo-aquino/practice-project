@@ -439,26 +439,24 @@ h1 {
 
 .stack-03 .stack-03-videoSlider .stack-03-videoSlider-container .stack-03-videoSlider-slider .stack-03-videoSlider-slider-content h2 {
   font-size: 3.2rem;
-  color: #ccc;
+  color: #ececec;
 }
 
 .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  top: 0%;
 }
 
 .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-left {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: absolute;
+  top: 0;
   width: 14.9%;
   height: 100%;
   padding-right: 40px;
@@ -473,6 +471,9 @@ h1 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 14.9%;
   height: 100%;
   padding-left: 40px;

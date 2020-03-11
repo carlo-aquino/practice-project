@@ -6,12 +6,16 @@ var slide = document.getElementsByClassName("stack-03-videoSlider-slider-content
 const sliderMargin = 0.21019442984760903;
 var counter = 1;
 
+function toPercent (numValue) {
+    return (numValue / slider.clientWidth)*100;
+}
+
 // setting total width of the slider: totalWidth = no. of slides x 100
 slider.style.width = slide.length*100 + "%";
 
 // setting width for each slide
 for (i=0; i<=slide.length-1; i++) {
-    slide[i].style.width = ((sliderContainer.clientWidth*0.65) / slider.clientWidth)*100 + "%";
+    slide[i].style.width = toPercent(sliderContainer.clientWidth*0.65) + "%";
 }
 
 // setting margin for each slide
@@ -20,9 +24,9 @@ for (j=0; j<=slide.length-1; j++) {
     slide[j].style.marginRight = sliderMargin + "%";
 }
 
-var slideLength = ((slide[0].clientWidth/slider.clientWidth)*100) + sliderMargin*2;
-var spacer = ((sliderContainer.clientWidth/slider.clientWidth)*100) - ((slideLength/2) + (((sliderContainer.clientWidth/slider.clientWidth)*100)/2));
-var sliderContent = (slide[0].clientWidth / slider.clientWidth)*100;
+var slideLength = toPercent(slide[0].clientWidth) + sliderMargin*2;
+var spacer = toPercent(sliderContainer.clientWidth) - ((slideLength/2) + (toPercent(sliderContainer.clientWidth)/2));
+var sliderContent = toPercent(slide[0].clientWidth);
 
 // setting the initial position of the slider
 slider.style.transform = "translateX(" + -((sliderContent*2 + sliderMargin*4) - spacer) + "%)";
