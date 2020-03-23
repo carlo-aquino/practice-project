@@ -2,7 +2,32 @@
 var carouselSliderContainer = document.querySelector(".carouselBanner-content");
 var carouselSlider = document.querySelector(".carouselBanner-content-slider");
 var carouselSlide = document.getElementsByClassName("carouselBanner-content-slide");
+
 var carouselCounter = 1;
+
+const sliderChildren = carouselSlider.children;
+const firstSlide = sliderChildren[0];
+const lastSlide = sliderChildren[sliderChildren.length-1];
+const cloneFirstSlide = firstSlide.cloneNode(true);
+const cloneLastSlide = lastSlide.cloneNode(true);
+
+const bannerSlider = document.getElementById("carouselSlider");
+
+if (sliderChildren.length > 1) {
+    //duplicating slides for looping
+    bannerSlider.appendChild(cloneFirstSlide);
+    sliderChildren[sliderChildren.length-1].setAttribute("id", "firstSlide");
+
+    bannerSlider.appendChild(cloneLastSlide);
+    bannerSlider.insertBefore(cloneLastSlide, bannerSlider.childNodes[0]);
+    sliderChildren[0].setAttribute("id", "lastSlide");
+
+    // setting the initial position of the slider
+    carouselSlider.style.transform = "translateX(" + (-100 / carouselSlide.length) + "%)";    
+
+} else {
+    document.querySelector(".carouselBanner-arrows").style.display = "none";
+}
 
 // setting total width of the slider
 carouselSlider.style.width = (100*carouselSlide.length) + "%";
@@ -12,12 +37,9 @@ for (i=0; i<=carouselSlide.length-1; i++) {
     carouselSlide[i].style.width = (carouselSlider.clientWidth / carouselSlide.length) + "%";
 }
 
-// setting the initial position of the slider
-carouselSlider.style.transform = "translateX(" + (-100 / carouselSlide.length) + "%)";
-
 // PREV button
 document.querySelector("#carouselBanner-prev_BTN").addEventListener("click", function() {
-    if(carouselCounter >= 0) {
+    if(carouselCounter > 0) {
         carouselSlider.classList.add("slider-transition");
         carouselSlider.style.transform += "translateX(" + (100 / carouselSlide.length) + "%)";
         carouselCounter--;

@@ -1,20 +1,17 @@
 @import './partials/variables';
 @import './partials/mixins';
 
-%headingFont {
-    font-family: $documentText;
-    font-weight: 700;
-}
-
-%bodyFont {
-    font-family: $documentText;
-    font-weight: 300;
-}
-
-%flexCenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.section-heading {
+    width:100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    margin-bottom: 64px;
+  
+    h3 {
+        @include headingFont(2.0rem, #636363);
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        text-indent: 0.8rem;
+    }
 }
 
 .slider-transition {
@@ -49,13 +46,11 @@
 }
 
 .mainHeader-container {
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
 
     .mainHeader-logo {
-        @extend %flexCenter;
-        justify-content: flex-start;
+        @include displayFlex(flex-start, center);
         float: left;
         width: 20%;
         height: 88px;
@@ -70,14 +65,13 @@
     }
 
     .mainHeader-navigation {
-        @extend %flexCenter;
-        justify-content: flex-end;
+        @include displayFlex(flex-end, center);
         width: 80%;
         height: 88px;
         background: $primaryColor;
 
         .mainHeader-navigation-container {
-            @extend %flexCenter;
+            @include displayFlex(center, center);
 
             .mainHeader-links {
                 padding: 10px 0px;
@@ -85,33 +79,51 @@
 
                 ul {
                     margin-bottom: 0;
-                } 
 
-                li {
-                    display: inline;
-                    margin: 0px 20px;
-                    
-
-                    a {
-                        @extend %headingFont;
-                        padding: 30px 0px;
-                        font-size: 1.6rem;
-                        font-weight: 600;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        color:  #fff;
-
-                        &:hover {
+                    li {
+                        position: relative;
+                        display: inline-block;
+                        margin: 0px 20px;
+    
+                        a {
+                            @include headingFont(1.6rem, #fff);
+                            padding: 30px 0px;
+                            font-weight: 600;
+                            text-transform: uppercase;
                             text-decoration: none;
-                            color: #fff;
-                            border-bottom: 4px solid #fff;
+    
+                            &:hover {
+                                text-decoration: none;
+                                color: #fff;
+                                border-bottom: 4px solid #fff;
+                            }
+                        }
+    
+                        ul {
+                            position: absolute;
+                            left: 0;
+                            top: 56px;
+                            display: hidden;
+                            visibility: hidden;
+                            background: #fff;
+                            z-index: 10;
+                            min-width: 200px;
+    
+                            li {
+                                @include headingFont(1.6rem, #000);
+                                display:block;
+                                font-weight: 600;
+                                margin: 0;
+                                padding: 8px 16px;
+                            }
+                        }
+
+                        &:hover > ul, ul li ul:hover {
+                            visibility: visible;
+                            display: block;
                         }
                     }
-
-                    &:last-child {
-                        margin-right: 32px
-                    }
-                }
+                } 
             }
 
             .mainHeader-search {
@@ -140,53 +152,69 @@
         overflow: hidden;
 
         .carouselBanner-content-slider {
-            @extend %flexCenter;
+            @include displayFlex(center, center);
             height: 100%;
 
             .carouselBanner-content-slide {
-                @extend %flexCenter;
-                justify-content: flex-start;
+                @include displayFlex(flex-start, center);
                 position: relative;
                 width: 100%;
                 height: 100%;
                 overflow: auto;
 
                 .carouselBanner-content-body {
+                    @include displayFlex(flex-start, center);
                     z-index: 3;
 
-                    h2 {
-                        @extend %headingFont;
-                        max-width: 640px;
-                        font-size: 5.6rem;
-                        text-transform: uppercase;
-                        padding-bottom: 16px;
-                        color: #fff;
-                    }
-        
-                    p {
-                        @extend %bodyFont;
-                        max-width: 612px;
-                        font-size: 2.0rem;
-                        line-height: 3.2rem;
-                        padding-bottom: 32px;
-                        color: #fff;
-                    }
-        
-                    button {
-                        @extend %flexCenter;
-                        @extend %headingFont;
-                        justify-self: flex-start;
-                        width: 100%;
-                        max-width: 320px;
-                        height: 64px;
-                        font-size: 1.6rem;
-                        font-weight: 500;
-                        text-transform: uppercase;
-                        border-radius: 8px;
-                        border: 0px solid #fff;
-                        background: $secondaryColor;
-                        color: #fff;
-                    }
+                    .carouselBanner-content-body-container {
+
+                        h2 {
+                            @include headingFont(5.6rem, #fff);
+                            max-width: 640px;
+                            text-transform: uppercase;
+                            padding-bottom: 8px;
+
+                            & span {
+                                font-size: 2.4rem;
+                            }
+                        }
+            
+                        p, li {
+                            @include bodyFont(2.0rem, #fff);
+                            max-width: 612px;
+                            line-height: 3.2rem;
+
+                            & span {
+                                font-weight: 700;
+                            }
+                        }
+
+                        ul {
+                            list-style-type: square;
+
+                            li {
+                                margin-left: 56px;
+                            }
+                        }
+            
+                        a {
+                            @include headingFont(1.6rem, #fff);
+                            display: inline-block;
+                            padding: 24px 40px;
+                            margin-top: 32px;
+                            font-size: 1.6rem;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            border-radius: 8px;
+                            border: 0px solid #fff;
+                            background: $secondaryColor;
+                            color: #fff;
+    
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }  
                 }
 
                 .carouselBanner-overlay {
@@ -216,7 +244,6 @@
 
     .carouselBanner-arrows {
         position: relative;
-        // @extend %flexCenter;
         top: 50%;
         z-index: 5;
 
@@ -265,11 +292,8 @@
             padding-bottom: 16px;
 
             .stack-02-cards-counter {
-                @extend %headingFont;
-                @extend %flexCenter;
-                justify-content: flex-end;
-                font-size: 2.4rem;
-                color: #dbdbdb;
+                @include displayFlex(flex-end, center);
+                @include headingFont(2.4rem, #dbdbdb);
                 margin-bottom: 64px;
             }
 
@@ -281,18 +305,25 @@
                 }
 
                 h2 {
-                    @extend %headingFont;
-                    font-size: 2.2rem;
+                    @include headingFont(2.2rem, #414141);
                     margin: 24px 0px 8px 0px;
-                    color: #414141;
                 }
 
                 p {
-                    @extend %bodyFont;
+                    @include bodyFont(1.6rem, #878787);
                     height: 40px;
-                    font-size: 1.6rem;
                     line-height: 2.4rem;
-                    color: #878787;
+                }
+
+                .default-link{ 
+                    position:absolute; 
+                    width:100%;
+                    height:100%;
+                    top:0;
+                    left: 0;
+                    z-index: 1;
+                    filter: alpha(opacity=0);  
+                    opacity:0;  
                 }
             }
         }
@@ -308,11 +339,9 @@
                     float: left;
     
                     a {
-                        @extend %headingFont;
-                        font-size: 1.4rem;
+                        @include headingFont(1.4rem, $secondaryColor);
                         text-transform: uppercase;
                         text-decoration: none;
-                        color: $secondaryColor;
 
                         &:hover {
                             color: #fff;
@@ -324,8 +353,7 @@
                 }
 
                 &:nth-child(2) {
-                    @extend %flexCenter;
-                    justify-content: flex-end;
+                    @include displayFlex(flex-end, center);
                     width: 50%;
                     float: left;
 
@@ -376,7 +404,6 @@
 
 .stack-03 {
     width: 100%;
-    // padding: 0px 0px 232px 0px;
 
     .stack-03-videoSlider {
         position: relative;
@@ -395,13 +422,11 @@
                 transform: translateX(-1410px);
 
                 .stack-03-videoSlider-slider-content {
-                    @extend %flexCenter;
+                    @include displayFlex(center, center);
                     background: #ccc;
 
                     h2 {
-                        @extend %headingFont;
-                        font-size: 3.2rem;
-                        color: #ececec;
+                        @include headingFont(3.2rem, #ececec);
                     }
                 }
             }
@@ -410,12 +435,9 @@
         .stack-03-videoSlider-controls {
             display: flex;
             justify-content: space-between;
-            // width: 100%;
-            // height: 100%;
 
             .stack-03-videoSlider-controls-left {
-                @extend %flexCenter;
-                justify-content: flex-end;
+                @include displayFlex(flex-end, center);
                 position: absolute;
                 top: 0;
                 width: 14.9%;
@@ -429,8 +451,7 @@
             }
 
             .stack-03-videoSlider-controls-right {
-                @extend %flexCenter;
-                justify-content: flex-start;
+                @include displayFlex(flex-start, center);
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -479,33 +500,26 @@
                 width: 100%;
 
                 h2 {
-                    @extend %headingFont;
-                    font-size: 2.8rem;
+                    @include headingFont(2.8rem, $primaryColor);
                     line-height: 3.6rem;
                     font-weight: 600;
-                    color: $primaryColor;
                     margin-bottom: 16px;
                 }
 
                 p {
-                    @extend %bodyFont;
-                    font-size: 2.0rem;
+                    @include bodyFont(2.0rem, #848484);
                     line-height: 3.0rem;
                     max-height: 56px;
                     overflow: hidden;
-                    color: #848484;
                     margin-bottom: 24px;
                 }
 
                 .stack-04-cards-leftColumn-content-link {
-                    @extend %flexCenter;
-                    justify-content: flex-start;
+                    @include displayFlex(flex-start, center);
 
                     a {
-                        @extend %headingFont;
-                        font-size: 1.6rem;
+                        @include headingFont(1.6rem, $secondaryColor);
                         text-transform: uppercase;
-                        color: $secondaryColor;
                     }
 
                     img {
@@ -530,11 +544,6 @@
             .stack-04-cards-rightColumn-card-thumb {
                 width: 33%;
                 background: #ccc;
-
-                // img {
-                //     width: 100%;
-                //     height: auto;
-                // }
             }
 
             .stack-04-cards-rightColumn-card-content {
@@ -545,35 +554,28 @@
                     width: 100%;
 
                     h2 {
-                        @extend %headingFont;
-                        font-size: 2.0rem;
+                        @include headingFont(2.0rem, $primaryColor);
                         font-weight: 600;
                         line-height: 2.9rem;
                         max-height: 56px;
                         overflow: hidden;
-                        color: $primaryColor;
                         margin-bottom: 5px;
                     }
     
                     p {
-                        @extend %bodyFont;
-                        font-size: 1.8rem;
+                        @include bodyFont(1.8rem, #848484);
                         line-height: 2.6rem;
                         max-height: 50px;
                         overflow: hidden;
-                        color: #848484;
                         margin-bottom: 16px;
                     }
     
                     .stack-04-cards-rightColumn-content-link {
-                        @extend %flexCenter;
-                        justify-content: flex-start;
+                        @include displayFlex(flex-start, center);
     
                         a {
-                            @extend %headingFont;
-                            font-size: 1.6rem;
+                            @include headingFont(1.6rem, $secondaryColor);
                             text-transform: uppercase;
-                            color: $secondaryColor;
                         }
     
                         img {
@@ -594,7 +596,7 @@
         position: relative;
 
         .mainFooter-subscription {
-            @extend %flexCenter;
+            @include displayFlex(center, center);
             flex-flow: row nowrap;
             position: absolute;
             top: -88px;
@@ -603,43 +605,36 @@
             background: $primaryColor;
     
             h3 {
-                @extend %headingFont;
+                @include headingFont(2.8rem, #fff);
                 min-width: 357px;
-                font-size: 2.8rem;
                 font-weight: 500;
-                color: #fff;
                 margin: 0px 24px 0px 16px;
             }
     
             form {
-                @extend %flexCenter;
-                justify-content: flex-start;
-                align-items: flex-start;
+                @include displayFlex(flex-start, flex-start);
                 width: 100%;
                 max-width: 624px;
     
                 input {
-                    @extend %bodyFont;
+                    @include bodyFont(2.4rem, #4c4c4c);
                     width: 100%;
                     max-width: 416px;
                     height: 56px;
                     border-radius: 8px;
                     border: 0;
-                    font-size: 2.4rem;
                     text-indent: 24px;
                 }
     
                 button {
-                    @extend %flexCenter;
-                    @extend %headingFont;
+                    @include displayFlex(center, center);
+                    @include headingFont(1.8rem, #fff);
                     width: 100%;
                     max-width: 192px;
                     height: 56px;
-                    font-size: 1.8rem;
                     text-transform: uppercase;
                     border-radius: 8px;
                     border: 2px solid #fff;
-                    color: #fff;
                     background: none;
                     margin-left: 16px;
                     padding: 0px 24px;
@@ -653,9 +648,7 @@
     }
 
     .mainFooter-nav {
-        @extend %flexCenter;
-        justify-content: flex-start;
-        align-items: flex-start;
+        @include displayFlex(flex-start, flex-start);
         flex-flow: row wrap;
         padding: 88px 0px 32px 0px;
 
@@ -673,15 +666,15 @@
             width: 27.56%;
 
             h2 {
-                @extend %headingFont;
+                @include headingFont(2.0rem, #4c4c4c);
                 display: inline;
-                font-size: 2.0rem;
-                color: #4c4c4c;
             }
 
             p {
-                @extend %bodyFont;
-                @include footerText;
+                @include bodyFont(1.6rem, #848484);
+                display: inline-block;
+                max-width: 312px;
+                line-height: 2.6rem;
             }
         }
         
@@ -689,28 +682,25 @@
             width: 26.28%;
 
             h2 {
-                @extend %headingFont;
+                @include headingFont(2.0rem, #4c4c4c);
                 display: inline;
-                font-size: 2.0rem;
-                color: #4c4c4c;
             }
 
             p {
-                @extend %bodyFont;
-                @include footerText;
+                @include bodyFont(1.6rem, #848484);
+                display: inline-block;
+                max-width: 312px;
+                line-height: 2.6rem;
             }
         }
         
         .mainFooter-nav-col-04 {
-            @extend %flexCenter;
-            justify-content: flex-end;
+            @include displayFlex(flex-end, center);
             flex-flow: row wrap;
             width: 25.01%;
 
             h2 {
-                @extend %headingFont;
-                font-size: 2.2rem;
-                color: #4c4c4c;
+                @include headingFont(2.2rem, #4c4c4c);
                 padding-bottom: 16px;
             }
 
@@ -721,12 +711,10 @@
     }
 
     .mainFooter-copyright {
-        @extend %bodyFont;
+        @include bodyFont(1.6rem, #848484);
         width: 100%;
         padding: 24px 0px;
         border-top: 1px solid rgba(0, 0, 0, 0.08);
         text-align: center;
-        font-size: 1.6rem;
-        color: #848484;
     }
 }

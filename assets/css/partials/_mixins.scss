@@ -1,7 +1,19 @@
-@mixin footerText {
-  display: inline-block;
-  max-width: 312px;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  color: #848484;
+@mixin displayFlex ($horizontal, $vertical) {
+  display: flex;
+  justify-content: $horizontal;
+  align-items: $vertical;
+}
+
+@mixin headingFont ($fontSize, $fontColor) {
+  font-family: $documentText;
+  font-weight: 700;
+  font-size: $fontSize;
+  color: $fontColor;
+}
+
+@mixin bodyFont ($fontSize, $fontColor) {
+  font-family: $documentText;
+  font-weight: 300;
+  font-size: $fontSize;
+  color: $fontColor;
 }

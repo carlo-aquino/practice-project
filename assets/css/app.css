@@ -31,33 +31,13 @@ h1 {
 }
 
 .section-heading h3 {
-  margin-bottom: 16px;
-  font-size: 2.0rem;
-  color: #636363;
-  text-transform: uppercase;
-  text-indent: 0.8rem;
-}
-
-.section-heading h3, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links li a, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body h2, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content h2, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(1) a, .stack-03 .stack-03-videoSlider .stack-03-videoSlider-container .stack-03-videoSlider-slider .stack-03-videoSlider-slider-content h2, .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container h2, .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container .stack-04-cards-leftColumn-content-link a, .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container h2, .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container .stack-04-cards-rightColumn-content-link a, #mainFooter .mainFooter-container .mainFooter-subscription h3, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav .mainFooter-nav-col-02 h2, #mainFooter .mainFooter-nav .mainFooter-nav-col-03 h2, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 h2 {
   font-family: "Muli", sans-serif;
   font-weight: 700;
-}
-
-.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body p, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content p, .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container p, .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container p, #mainFooter .mainFooter-container .mainFooter-subscription form input, #mainFooter .mainFooter-nav .mainFooter-nav-col-02 p, #mainFooter .mainFooter-nav .mainFooter-nav-col-03 p, #mainFooter .mainFooter-copyright {
-  font-family: "Muli", sans-serif;
-  font-weight: 300;
-}
-
-.mainHeader-container .mainHeader-logo, .mainHeader-container .mainHeader-navigation, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container, .carouselBanner .carouselBanner-content .carouselBanner-content-slider, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter, .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(2), .stack-03 .stack-03-videoSlider .stack-03-videoSlider-container .stack-03-videoSlider-slider .stack-03-videoSlider-slider-content, .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-left, .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-right, .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container .stack-04-cards-leftColumn-content-link, .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container .stack-04-cards-rightColumn-content-link, #mainFooter .mainFooter-container .mainFooter-subscription, #mainFooter .mainFooter-container .mainFooter-subscription form, #mainFooter .mainFooter-container .mainFooter-subscription form button, #mainFooter .mainFooter-nav, #mainFooter .mainFooter-nav .mainFooter-nav-col-04 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  font-size: 2rem;
+  color: #636363;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  text-indent: 0.8rem;
 }
 
 .slider-transition {
@@ -93,16 +73,22 @@ h1 {
 }
 
 .mainHeader-container {
-  display: -ms-flexbox;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
 .mainHeader-container .mainHeader-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   float: left;
   width: 20%;
   height: 88px;
@@ -117,12 +103,30 @@ h1 {
 }
 
 .mainHeader-container .mainHeader-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 80%;
   height: 88px;
   background: #022379;
+}
+
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links {
@@ -134,28 +138,54 @@ h1 {
   margin-bottom: 0;
 }
 
-.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links li {
-  display: inline;
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li {
+  position: relative;
+  display: inline-block;
   margin: 0px 20px;
 }
 
-.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links li a {
-  padding: 30px 0px;
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li a {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
   font-size: 1.6rem;
+  color: #fff;
+  padding: 30px 0px;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
 }
 
-.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links li a:hover {
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li a:hover {
   text-decoration: none;
   color: #fff;
   border-bottom: 4px solid #fff;
 }
 
-.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links li:last-child {
-  margin-right: 32px;
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li ul {
+  position: absolute;
+  left: 0;
+  top: 56px;
+  display: hidden;
+  visibility: hidden;
+  background: #fff;
+  z-index: 10;
+  min-width: 200px;
+}
+
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li ul li {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #000;
+  display: block;
+  font-weight: 600;
+  margin: 0;
+  padding: 8px 16px;
+}
+
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li:hover > ul, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li ul li ul:hover {
+  visibility: visible;
+  display: block;
 }
 
 .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-search {
@@ -183,13 +213,28 @@ h1 {
 }
 
 .carouselBanner .carouselBanner-content .carouselBanner-content-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
 
 .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   width: 100%;
   height: 100%;
@@ -197,30 +242,61 @@ h1 {
 }
 
 .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 3;
 }
 
-.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body h2 {
-  max-width: 640px;
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body .carouselBanner-content-body-container h2 {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
   font-size: 5.6rem;
+  color: #fff;
+  max-width: 640px;
   text-transform: uppercase;
-  padding-bottom: 16px;
-  color: #fff;
+  padding-bottom: 8px;
 }
 
-.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body p {
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body .carouselBanner-content-body-container h2 span {
+  font-size: 2.4rem;
+}
+
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body .carouselBanner-content-body-container p, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body .carouselBanner-content-body-container li {
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #fff;
   max-width: 612px;
-  font-size: 2.0rem;
   line-height: 3.2rem;
-  padding-bottom: 32px;
-  color: #fff;
 }
 
-.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body button {
-  justify-self: flex-start;
-  width: 100%;
-  max-width: 320px;
-  height: 64px;
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body .carouselBanner-content-body-container p span, .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body .carouselBanner-content-body-container li span {
+  font-weight: 700;
+}
+
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body .carouselBanner-content-body-container ul {
+  list-style-type: square;
+}
+
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body .carouselBanner-content-body-container ul li {
+  margin-left: 56px;
+}
+
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body .carouselBanner-content-body-container a {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff;
+  display: inline-block;
+  padding: 24px 40px;
+  margin-top: 32px;
   font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -228,6 +304,10 @@ h1 {
   border: 0px solid #fff;
   background: #0082d6;
   color: #fff;
+}
+
+.carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-content-body .carouselBanner-content-body-container a:hover {
+  text-decoration: none;
 }
 
 .carouselBanner .carouselBanner-content .carouselBanner-content-slider .carouselBanner-content-slide .carouselBanner-overlay {
@@ -308,9 +388,17 @@ h1 {
 }
 
 .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
   font-size: 2.4rem;
   color: #dbdbdb;
   margin-bottom: 64px;
@@ -323,16 +411,31 @@ h1 {
 }
 
 .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content h2 {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
   font-size: 2.2rem;
-  margin: 24px 0px 8px 0px;
   color: #414141;
+  margin: 24px 0px 8px 0px;
 }
 
 .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content p {
-  height: 40px;
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
   font-size: 1.6rem;
-  line-height: 2.4rem;
   color: #878787;
+  height: 40px;
+  line-height: 2.4rem;
+}
+
+.stack-02-cards .stack-02-cards-wrapper .stack-02-cards-body .stack-02-cards-content .default-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  filter: alpha(opacity=0);
+  opacity: 0;
 }
 
 .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer {
@@ -347,10 +450,12 @@ h1 {
 }
 
 .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(1) a {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
   font-size: 1.4rem;
+  color: #0082d6;
   text-transform: uppercase;
   text-decoration: none;
-  color: #0082d6;
 }
 
 .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(1) a:hover {
@@ -359,9 +464,15 @@ h1 {
 }
 
 .stack-02-cards .stack-02-cards-wrapper .stack-02-cards-footer div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50%;
   float: left;
 }
@@ -434,10 +545,21 @@ h1 {
 }
 
 .stack-03 .stack-03-videoSlider .stack-03-videoSlider-container .stack-03-videoSlider-slider .stack-03-videoSlider-slider-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #ccc;
 }
 
 .stack-03 .stack-03-videoSlider .stack-03-videoSlider-container .stack-03-videoSlider-slider .stack-03-videoSlider-slider-content h2 {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
   font-size: 3.2rem;
   color: #ececec;
 }
@@ -452,9 +574,15 @@ h1 {
 }
 
 .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 0;
   width: 14.9%;
@@ -468,9 +596,15 @@ h1 {
 }
 
 .stack-03 .stack-03-videoSlider .stack-03-videoSlider-controls .stack-03-videoSlider-controls-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -528,32 +662,44 @@ h1 {
 }
 
 .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container h2 {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
   font-size: 2.8rem;
+  color: #022379;
   line-height: 3.6rem;
   font-weight: 600;
-  color: #022379;
   margin-bottom: 16px;
 }
 
 .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container p {
-  font-size: 2.0rem;
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #848484;
   line-height: 3.0rem;
   max-height: 56px;
   overflow: hidden;
-  color: #848484;
   margin-bottom: 24px;
 }
 
 .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container .stack-04-cards-leftColumn-content-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container .stack-04-cards-leftColumn-content-link a {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
   font-size: 1.6rem;
-  text-transform: uppercase;
   color: #0082d6;
+  text-transform: uppercase;
 }
 
 .stack-04-cards .stack-04-cards-leftColumn .stack-04-cards-leftColumn-content .stack-04-cards-leftColumn-content-container .stack-04-cards-leftColumn-content-link img {
@@ -596,34 +742,46 @@ h1 {
 }
 
 .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container h2 {
-  font-size: 2.0rem;
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #022379;
   font-weight: 600;
   line-height: 2.9rem;
   max-height: 56px;
   overflow: hidden;
-  color: #022379;
   margin-bottom: 5px;
 }
 
 .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container p {
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
   font-size: 1.8rem;
+  color: #848484;
   line-height: 2.6rem;
   max-height: 50px;
   overflow: hidden;
-  color: #848484;
   margin-bottom: 16px;
 }
 
 .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container .stack-04-cards-rightColumn-content-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container .stack-04-cards-rightColumn-content-link a {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
   font-size: 1.6rem;
-  text-transform: uppercase;
   color: #0082d6;
+  text-transform: uppercase;
 }
 
 .stack-04-cards .stack-04-cards-rightColumn .stack-04-cards-rightColumn-card .stack-04-cards-rightColumn-card-content .stack-04-cards-rightColumn-card-content-container .stack-04-cards-rightColumn-content-link img {
@@ -640,6 +798,15 @@ h1 {
 }
 
 #mainFooter .mainFooter-container .mainFooter-subscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
@@ -652,14 +819,19 @@ h1 {
 }
 
 #mainFooter .mainFooter-container .mainFooter-subscription h3 {
-  min-width: 357px;
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
   font-size: 2.8rem;
-  font-weight: 500;
   color: #fff;
+  min-width: 357px;
+  font-weight: 500;
   margin: 0px 24px 0px 16px;
 }
 
 #mainFooter .mainFooter-container .mainFooter-subscription form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -671,24 +843,38 @@ h1 {
 }
 
 #mainFooter .mainFooter-container .mainFooter-subscription form input {
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+  color: #4c4c4c;
   width: 100%;
   max-width: 416px;
   height: 56px;
   border-radius: 8px;
   border: 0;
-  font-size: 2.4rem;
   text-indent: 24px;
 }
 
 #mainFooter .mainFooter-container .mainFooter-subscription form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #fff;
   width: 100%;
   max-width: 192px;
   height: 56px;
-  font-size: 1.8rem;
   text-transform: uppercase;
   border-radius: 8px;
   border: 2px solid #fff;
-  color: #fff;
   background: none;
   margin-left: 16px;
   padding: 0px 24px;
@@ -699,6 +885,9 @@ h1 {
 }
 
 #mainFooter .mainFooter-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -727,17 +916,21 @@ h1 {
 }
 
 #mainFooter .mainFooter-nav .mainFooter-nav-col-02 h2 {
-  display: inline;
-  font-size: 2.0rem;
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
   color: #4c4c4c;
+  display: inline;
 }
 
 #mainFooter .mainFooter-nav .mainFooter-nav-col-02 p {
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #848484;
   display: inline-block;
   max-width: 312px;
-  font-size: 1.6rem;
   line-height: 2.6rem;
-  color: #848484;
 }
 
 #mainFooter .mainFooter-nav .mainFooter-nav-col-03 {
@@ -745,23 +938,33 @@ h1 {
 }
 
 #mainFooter .mainFooter-nav .mainFooter-nav-col-03 h2 {
-  display: inline;
-  font-size: 2.0rem;
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
   color: #4c4c4c;
+  display: inline;
 }
 
 #mainFooter .mainFooter-nav .mainFooter-nav-col-03 p {
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #848484;
   display: inline-block;
   max-width: 312px;
-  font-size: 1.6rem;
   line-height: 2.6rem;
-  color: #848484;
 }
 
 #mainFooter .mainFooter-nav .mainFooter-nav-col-04 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
@@ -770,6 +973,8 @@ h1 {
 }
 
 #mainFooter .mainFooter-nav .mainFooter-nav-col-04 h2 {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
   font-size: 2.2rem;
   color: #4c4c4c;
   padding-bottom: 16px;
@@ -780,11 +985,13 @@ h1 {
 }
 
 #mainFooter .mainFooter-copyright {
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #848484;
   width: 100%;
   padding: 24px 0px;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   text-align: center;
-  font-size: 1.6rem;
-  color: #848484;
 }
 /*# sourceMappingURL=app.css.map */
