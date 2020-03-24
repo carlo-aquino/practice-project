@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -41,10 +41,10 @@ h1 {
 }
 
 .slider-transition {
-  -webkit-transition: 400ms -webkit-transform ease-in-out;
-  transition: 400ms -webkit-transform ease-in-out;
-  transition: 400ms transform ease-in-out;
-  transition: 400ms transform ease-in-out, 400ms -webkit-transform ease-in-out;
+  -webkit-transition: 500ms -webkit-transform ease-out;
+  transition: 500ms -webkit-transform ease-out;
+  transition: 500ms transform ease-out;
+  transition: 500ms transform ease-out, 500ms -webkit-transform ease-out;
 }
 
 #headerPlaceholder {
@@ -139,7 +139,6 @@ h1 {
 }
 
 .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li {
-  position: relative;
   display: inline-block;
   margin: 0px 20px;
 }
@@ -163,13 +162,12 @@ h1 {
 
 .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li ul {
   position: absolute;
-  left: 0;
-  top: 56px;
+  top: 88px;
   display: hidden;
   visibility: hidden;
   background: #fff;
   z-index: 10;
-  min-width: 200px;
+  min-width: 250px;
 }
 
 .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li ul li {
@@ -178,9 +176,30 @@ h1 {
   font-size: 1.6rem;
   color: #000;
   display: block;
+  width: 100%;
   font-weight: 600;
   margin: 0;
-  padding: 8px 16px;
+}
+
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li ul li a {
+  display: block;
+  font-weight: 600;
+  padding: 12px;
+  margin-left: 8px;
+  text-decoration: none;
+  text-transform: none;
+  color: #414141;
+}
+
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li ul li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #0082d6;
+  border-bottom: 0px;
+}
+
+.mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li ul li:hover {
+  background: #0082d6;
 }
 
 .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li:hover > ul, .mainHeader-container .mainHeader-navigation .mainHeader-navigation-container .mainHeader-links ul li ul li ul:hover {
