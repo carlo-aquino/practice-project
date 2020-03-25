@@ -1,7 +1,7 @@
 // variable initializations
-var sliderContainer = document.querySelector(".stack-03-videoSlider-container");
-var slider = document.querySelector(".stack-03-videoSlider-slider");
-var slide = document.getElementsByClassName("stack-03-videoSlider-slider-content");
+var sliderContainer = document.querySelector(".stack03--videoSlider__container");
+var slider = document.querySelector(".stack03--videoSlider__item");
+var slide = document.getElementsByClassName("stack03--videoSlider--item__content");
 
 const sliderMargin = 0.21019442984760903;
 var counter = 1;
@@ -32,7 +32,7 @@ var sliderContent = toPercent(slide[0].clientWidth);
 slider.style.transform = "translateX(" + -((sliderContent*2 + sliderMargin*4) - spacer) + "%)";
 
 // NEXT button
-document.querySelector("#stack-03-videoSlider-controls-right_BTN").addEventListener("click", function() {
+document.querySelector(".stack03--videoSlider--controls__NEXT").addEventListener("click", function() {
     if(counter <= slide.length-4) {
         slider.classList.add("slider-transition");
         slider.style.transform += "translateX(" + -((sliderContent + sliderMargin*2)) + "%)";
@@ -41,7 +41,7 @@ document.querySelector("#stack-03-videoSlider-controls-right_BTN").addEventListe
 });
 
 // PREV button
-document.querySelector("#stack-03-videoSlider-controls-left_BTN").addEventListener("click", function() {
+document.querySelector(".stack03--videoSlider--controls__PREV").addEventListener("click", function() {
     if(counter > 0) {
         slider.classList.add("slider-transition");
         slider.style.transform += "translateX(" + ((sliderContent + sliderMargin*2)) + "%)";

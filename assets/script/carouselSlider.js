@@ -1,7 +1,7 @@
 // variable initializations
-var carouselSliderContainer = document.querySelector(".carouselBanner-content");
-var carouselSlider = document.querySelector(".carouselBanner-content-slider");
-var carouselSlide = document.getElementsByClassName("carouselBanner-content-slide");
+var carouselSliderContainer = document.querySelector(".carouselBanner__content");
+var carouselSlider = document.querySelector(".carouselBanner--content__slider");
+var carouselSlide = document.getElementsByClassName("carouselBanner--slider__item");
 
 var carouselCounter = 1;
 
@@ -26,7 +26,7 @@ if (sliderChildren.length > 1) {
     carouselSlider.style.transform = "translateX(" + (-100 / carouselSlide.length) + "%)";    
 
 } else {
-    document.querySelector(".carouselBanner-arrows").style.display = "none";
+    document.querySelector(".carouselBanner__arrows").style.display = "none";
 }
 
 // setting total width of the slider
@@ -38,7 +38,7 @@ for (i=0; i<=carouselSlide.length-1; i++) {
 }
 
 // PREV button
-document.querySelector("#carouselBanner-prev_BTN").addEventListener("click", function() {
+document.querySelector("#carouselBanner--prev__BTN").addEventListener("click", function() {
     if(carouselCounter > 0) {
         carouselSlider.classList.add("slider-transition");
         carouselSlider.style.transform += "translateX(" + (100 / carouselSlide.length) + "%)";
@@ -47,7 +47,7 @@ document.querySelector("#carouselBanner-prev_BTN").addEventListener("click", fun
 });
 
 // NEXT button
-document.querySelector("#carouselBanner-next_BTN").addEventListener("click", function() {
+document.querySelector("#carouselBanner--next__BTN").addEventListener("click", function() {
     if(carouselCounter <= carouselSlide.length-2) {
         carouselSlider.classList.add("slider-transition");
         carouselSlider.style.transform += "translateX(" + (-100 / carouselSlide.length) + "%)";

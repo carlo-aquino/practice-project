@@ -45,11 +45,11 @@
     width: 100%;
 }
 
-.mainHeader-container {
+.mainHeader__container {
     display: flex;
     width: 100%;
 
-    .mainHeader-logo {
+    .mainHeader__logo {
         @include displayFlex(flex-start, center);
         float: left;
         width: 20%;
@@ -64,21 +64,22 @@
         }
     }
 
-    .mainHeader-navigation {
+    .mainHeader__navigation {
         @include displayFlex(flex-end, center);
         width: 80%;
         height: 88px;
         background: $primaryColor;
 
-        .mainHeader-navigation-container {
+        .mainHeader--navigation__container {
             @include displayFlex(center, center);
 
-            .mainHeader-links {
+            .mainHeader__links {
                 padding: 10px 0px;
                 border-right: 1px solid rgba(255, 255, 255, 0.08);
 
                 ul {
                     margin-bottom: 0;
+                    margin-right: 24px;
 
                     li {
                         display: inline-block;
@@ -91,7 +92,7 @@
                             text-transform: uppercase;
                             text-decoration: none;
     
-                            &:hover  {
+                            &:hover {
                                 text-decoration: none;
                                 color: #fff;
                                 border-bottom: 4px solid #fff;
@@ -109,7 +110,7 @@
     
                             li {
                                 @include headingFont(1.6rem, #000);
-                                display:block;
+                                display: block;
                                 width: 100%;
                                 font-weight: 600;
                                 margin: 0;
@@ -118,7 +119,7 @@
                                     display: block;
                                     font-weight: 600;
                                     padding: 12px;
-                                    margin-left:8px;
+                                    margin-left: 8px;
                                     text-decoration: none;
                                     text-transform: none;
                                     color: #414141;
@@ -145,7 +146,7 @@
                 } 
             }
 
-            .mainHeader-search {
+            .mainHeader__search {
                 margin-left: 32px;
 
                 img {
@@ -163,29 +164,29 @@
     height: calc(100vh - 88px);
     min-height: 608px;
 
-    .carouselBanner-content {
+    .carouselBanner__content {
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0px;
         overflow: hidden;
 
-        .carouselBanner-content-slider {
+        .carouselBanner--content__slider {
             @include displayFlex(center, center);
             height: 100%;
 
-            .carouselBanner-content-slide {
+            .carouselBanner--slider__item {
                 @include displayFlex(flex-start, center);
                 position: relative;
                 width: 100%;
                 height: 100%;
                 overflow: auto;
 
-                .carouselBanner-content-body {
+                .carouselBanner--item__body {
                     @include displayFlex(flex-start, center);
                     z-index: 3;
 
-                    .carouselBanner-content-body-container {
+                    .carouselBanner--item--body__container {
 
                         h2 {
                             @include headingFont(5.6rem, #fff);
@@ -221,13 +222,11 @@
                             display: inline-block;
                             padding: 24px 40px;
                             margin-top: 32px;
-                            font-size: 1.6rem;
                             font-weight: 500;
                             text-transform: uppercase;
                             border-radius: 8px;
                             border: 0px solid #fff;
                             background: $secondaryColor;
-                            color: #fff;
     
                             &:hover {
                                 text-decoration: none;
@@ -236,7 +235,7 @@
                     }  
                 }
 
-                .carouselBanner-overlay {
+                .carouselBanner__overlay {
                     position: absolute;
                     top: 0px;
                     left: 0px;
@@ -246,7 +245,7 @@
                     z-index: 2;
                 }
 
-                .carouselBanner-content_IMG {
+                .carouselBanner--content__IMG {
                     position: absolute;
                     top: 0px;
                     left: 0px;
@@ -261,7 +260,7 @@
         } 
     }
 
-    .carouselBanner-arrows {
+    .carouselBanner__arrows {
         position: relative;
         top: 50%;
         z-index: 5;
@@ -282,7 +281,7 @@
         }
     }
 
-    .carouselBanner-sticky-btn {
+    .carouselBanner--sticky__BTN {
         top: 50%;
         transform: translateY(-50%);
         left: calc(100% - 64px);
@@ -292,31 +291,31 @@
     }
 }
 
-.stack-02 {
+.stack--02 {
     width: 100%;
     padding: 144px 0px;
 }
 
-.stack-02-cards {
+.stack02__cards {
     padding-left: 0px;
     padding-right: 0px;
 
-    .stack-02-cards-wrapper {
+    .stack02--cards__wrapper {
         margin: 5px;
         padding: 32px 9.94% 16px 9.94%;
         overflow: auto;
         background: #fff;
 
-        .stack-02-cards-body {
+        .stack02--cards__body {
             padding-bottom: 16px;
 
-            .stack-02-cards-counter {
+            .stack02--cards__counter {
                 @include displayFlex(flex-end, center);
                 @include headingFont(2.4rem, #dbdbdb);
                 margin-bottom: 64px;
             }
 
-            .stack-02-cards-content {
+            .stack02--cards__content {
                 svg {
                     width: 64px;
                     height: auto;
@@ -334,7 +333,7 @@
                     line-height: 2.4rem;
                 }
 
-                .default-link{ 
+                .default-link { 
                     position:absolute; 
                     width:100%;
                     height:100%;
@@ -347,7 +346,7 @@
             }
         }
 
-        .stack-02-cards-footer {
+        .stack02--cards__footer {
             padding-top: 16px;
             border-top: 1px solid rgba(0, 0, 0, 0.08);
             overflow: auto;
@@ -391,56 +390,56 @@
             transition: all 0.5s ease;
         }
 
-        &:hover > .stack-02-cards-body > .stack-02-cards-counter {
+        &:hover > .stack02--cards__body > .stack02--cards__counter {
             color: #fff;
         }
 
-        &:hover > .stack-02-cards-body > .stack-02-cards-content svg {
+        &:hover > .stack02--cards__body > .stack02--cards__content svg {
             fill: #fff;
         }
 
-        &:hover > .stack-02-cards-body > .stack-02-cards-content h2 {
+        &:hover > .stack02--cards__body > .stack02--cards__content h2 {
             color: #fff;
         }
 
-        &:hover > .stack-02-cards-body > .stack-02-cards-content p {
+        &:hover > .stack02--cards__body > .stack02--cards__content p {
             color: #fff;
         }
 
-        &:hover > .stack-02-cards-body ~ .stack-02-cards-footer {
+        &:hover > .stack02--cards__body ~ .stack02--cards__footer {
             border-color: rgba(255, 255, 255, 0.08);
         }
 
-        &:hover > .stack-02-cards-body ~ .stack-02-cards-footer a {
+        &:hover > .stack02--cards__body ~ .stack02--cards__footer a {
             color: #fff;
         }
 
-        &:hover > .stack-02-cards-body ~ .stack-02-cards-footer svg {
+        &:hover > .stack02--cards__body ~ .stack02--cards__footer svg {
             fill: #fff;
         }
     }
 }
 
-.stack-03 {
+.stack--03 {
     width: 100%;
 
-    .stack-03-videoSlider {
+    .stack03__videoSlider {
         position: relative;
         width: 100%;
         height: 544px;
 
-        .stack-03-videoSlider-container {
+        .stack03--videoSlider__container {
             width: 100%;
             height: 100%;
             overflow-x: hidden;
 
-            .stack-03-videoSlider-slider {
+            .stack03--videoSlider__item {
                 display: flex;
                 width: 500%;
                 height: 100%;
                 transform: translateX(-1410px);
 
-                .stack-03-videoSlider-slider-content {
+                .stack03--videoSlider--item__content {
                     @include displayFlex(center, center);
                     background: #ccc;
 
@@ -451,11 +450,11 @@
             }
         }
 
-        .stack-03-videoSlider-controls {
+        .stack03--videoSlider__controls {
             display: flex;
             justify-content: space-between;
 
-            .stack-03-videoSlider-controls-left {
+            .stack03--videoSlider--controls__PREV {
                 @include displayFlex(flex-end, center);
                 position: absolute;
                 top: 0;
@@ -469,7 +468,7 @@
                 }
             }
 
-            .stack-03-videoSlider-controls-right {
+            .stack03--videoSlider--controls__NEXT {
                 @include displayFlex(flex-start, center);
                 position: absolute;
                 top: 0;
@@ -488,22 +487,22 @@
     }
 }
 
-.stack-04 {
+.stack--04 {
     width: 100%;
     padding: 144px 0px 232px 0px;
 }
 
-.stack-04-cards {
+.stack04__cards {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
     width: 100%;
 
-    .stack-04-cards-leftColumn {
+    .stack04--cards__leftColumn {
         width: 51.1176%;
         background: #fff;
 
-        .stack-04-cards-leftColumn-thumb {
+        .stack04--cards--leftColumn__thumb {
             width: 100%;
 
             img {
@@ -512,10 +511,10 @@
             }
         }
 
-        .stack-04-cards-leftColumn-content {
+        .stack04--cards--leftColumn__content {
             padding: 40px;
 
-            .stack-04-cards-leftColumn-content-container {
+            .stack04--cards--leftColumn--content__container {
                 width: 100%;
 
                 h2 {
@@ -533,7 +532,7 @@
                     margin-bottom: 24px;
                 }
 
-                .stack-04-cards-leftColumn-content-link {
+                .stack04--cards--leftColumn--content__link {
                     @include displayFlex(flex-start, center);
 
                     a {
@@ -549,27 +548,27 @@
         }
     }
 
-    .stack-04-cards-rightColumn {
+    .stack04--cards__rightColumn {
         display: flex;
         align-content: space-between;
         flex-flow: row wrap;
         width: 47.1176%;
 
-        .stack-04-cards-rightColumn-card {
+        .stack04--cards--rightColumn__item {
             display: flex;
             width: 100%;
             background: #fff;
 
-            .stack-04-cards-rightColumn-card-thumb {
+            .stack04--cards--rightColumn--item__thumb {
                 width: 33%;
                 background: #ccc;
             }
 
-            .stack-04-cards-rightColumn-card-content {
+            .stack04--cards--rightColumn--item__content {
                 width: 67%;
                 padding: 18px 24px;
 
-                .stack-04-cards-rightColumn-card-content-container {
+                .stack04--cards--rightColumn--item--content__container {
                     width: 100%;
 
                     h2 {
@@ -589,7 +588,7 @@
                         margin-bottom: 16px;
                     }
     
-                    .stack-04-cards-rightColumn-content-link {
+                    .stack04--cards--rightColumn--content__link {
                         @include displayFlex(flex-start, center);
     
                         a {
@@ -611,10 +610,10 @@
     width: 100%;
     background: #e2e2e2;
 
-    .mainFooter-container {
+    .mainFooter__container {
         position: relative;
 
-        .mainFooter-subscription {
+        .mainFooter__subscription {
             @include displayFlex(center, center);
             flex-flow: row nowrap;
             position: absolute;
@@ -666,12 +665,12 @@
         }
     }
 
-    .mainFooter-nav {
+    .mainFooter__nav {
         @include displayFlex(flex-start, flex-start);
         flex-flow: row wrap;
         padding: 88px 0px 32px 0px;
 
-        .mainFooter-nav-col-01 {
+        .mainFooter--nav__col01 {
             width: 21.15%;
 
             img {
@@ -681,7 +680,7 @@
             }
         }
 
-        .mainFooter-nav-col-02 {
+        .mainFooter--nav__col02 {
             width: 27.56%;
 
             h2 {
@@ -697,7 +696,7 @@
             }
         }
         
-        .mainFooter-nav-col-03 {
+        .mainFooter--nav__col03 {
             width: 26.28%;
 
             h2 {
@@ -713,7 +712,7 @@
             }
         }
         
-        .mainFooter-nav-col-04 {
+        .mainFooter--nav__col04 {
             @include displayFlex(flex-end, center);
             flex-flow: row wrap;
             width: 25.01%;
@@ -729,7 +728,7 @@
         }
     }
 
-    .mainFooter-copyright {
+    .mainFooter__copyright {
         @include bodyFont(1.6rem, #848484);
         width: 100%;
         padding: 24px 0px;
