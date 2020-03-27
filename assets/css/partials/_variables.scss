@@ -1,3 +1,5 @@
+@import './mixins';
+
 //typeface
 $documentText: 'Muli', sans-serif;
 
@@ -30,4 +32,21 @@ h1 {
   max-width: 1328px;
   padding: 0 40px;
   margin: 0 auto;
+}
+
+.section-heading {
+  width:100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 64px;
+
+  h3 {
+      @include headingFont(2.0rem, #636363);
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      text-indent: 0.8rem;
+  }
+}
+
+.slider-transition {
+  transition: 500ms transform ease-out;
 }
