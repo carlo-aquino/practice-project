@@ -1,8 +1,92 @@
-@import './variables';
 @import './mixins';
 
-.sample {
-    @include displayFlex(center, center);
+.pageBanner {
+    position: relative;
     width: 100%;
-    height:700px;
+    height: 488px;
+    background-image: url('../img/page-banner.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    .pageBanner__overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba($secondaryColor, 0.80);
+    }
+}
+
+@supports (background-blend-mode: multiply) {
+    .pageBanner__overlay {
+        display: none;
+    }
+
+    .pageBanner {
+        background-color: $secondaryColor;
+        background-blend-mode: multiply;
+    }
+}
+
+.product--block__pivot {
+    width: 100%;
+    position: relative;
+
+    .product--container {
+        @include displayFlex(center, center);
+        position: absolute;
+        top: -152px;
+        width: 100%;
+        height: 488px;
+    }
+}
+
+.product__leftColumn {
+    width: 50%;
+    height: 100%;
+    padding: 80px;
+    background: #fff;
+
+    .product--leftColumn__container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+
+        .product--counter {
+            @include headingFont(3.2rem, #dbdbdb);
+            text-align: right;
+        }
+    
+        .product--content {
+
+            img {
+                padding-bottom: 40px;
+                margin: 0;
+            }
+    
+            h2 {
+                @include headingFont(3.5rem, #414141);
+                padding-bottom: 16px;
+                margin: 0;
+            }
+    
+            p {
+                @include bodyFont(2.2rem, #878787);
+                margin: 0;
+            }
+        }
+    }
+}
+
+.product--container__rightColumn {
+    width: 50%;
+    height: 100%;
+    background-image: url('../img/page-banner.jpg');
+    background-size: cover;
+    background-position: (center, center);
+}
+
+.spacer {
+    height: 800px;
 }
