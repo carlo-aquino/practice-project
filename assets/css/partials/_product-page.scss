@@ -1,6 +1,6 @@
 @import './mixins';
 
-.pageBanner {
+.productPage--banner {
     position: relative;
     width: 100%;
     height: 488px;
@@ -8,13 +8,13 @@
     background-size: cover;
     background-position: center center;
 
-    .pageBanner__heading {
+    .productPage--heading {
         @include displayFlex(flex-start, center);
         position: relative;
         height: 100%;
         z-index: 2;
 
-        .pageBanner--heading__container {
+        .productPage--heading__container {
             padding-bottom: 72px;
             padding-left: 24px;
 
@@ -32,7 +32,7 @@
         }
     }
 
-    .pageBanner__overlay {
+    .productPage--banner__overlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -43,21 +43,21 @@
 }
 
 @supports (background-blend-mode: multiply) {
-    .pageBanner__overlay {
+    .productPage--banner__overlay {
         display: none;
     }
 
-    .pageBanner {
+    .productPage--banner {
         background-color: $secondaryColor;
         background-blend-mode: multiply;
     }
 }
 
-.product--block__pivot {
+.productPage--card__pivot {
     width: 100%;
     position: relative;
 
-    .product--container {
+    .productPage--card__container {
         @include displayFlex(center, center);
         position: absolute;
         top: -152px;
@@ -66,25 +66,25 @@
     }
 }
 
-.product__leftColumn {
+.productPage--card__leftColumn {
     width: 50%;
     height: 100%;
     padding: 80px;
     background: #fff;
 
-    .product--leftColumn__container {
+    .productPage--card--leftColumn__container {
         display: flex;
         flex-flow: column wrap;
         justify-content: space-between;
         width: 100%;
         height: 100%;
 
-        .product--counter {
+        .card--leftColumn--counter {
             @include headingFont(3.2rem, #dbdbdb);
             text-align: right;
         }
     
-        .product--content {
+        .card--leftColumn--content {
 
             img {
                 padding-bottom: 40px;
@@ -105,7 +105,7 @@
     }
 }
 
-.product--container__rightColumn {
+.productPage--card__rightColumn {
     width: 50%;
     height: 100%;
     background-image: url('../img/page-banner.jpg');
@@ -148,11 +148,11 @@
     }
 }
 
-.related-topics {
+.productPage--relatedTopics {
     padding-top: 128px;
     padding-bottom: 240px;
 
-    .relatedTopics__cards {
+    .productPage--relatedTopics__cards {
         width: 100%;
     }
 }
