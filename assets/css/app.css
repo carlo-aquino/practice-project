@@ -381,11 +381,6 @@ h1 {
           align-items: center;
 }
 
-.mainHeader--navigation__container .mainHeader__links {
-  padding: 10px 0px;
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
-}
-
 .mainHeader--navigation__container .mainHeader__links ul {
   margin-bottom: 0;
   margin-right: 24px;
@@ -475,7 +470,9 @@ h1 {
 }
 
 .mainHeader--navigation__container .mainHeader__search {
-  margin-left: 32px;
+  padding: 8px 0px;
+  padding-left: 32px;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .mainHeader--navigation__container .mainHeader__search img {
