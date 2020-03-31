@@ -393,7 +393,7 @@ h1 {
 
 .mainHeader--navigation__container .mainHeader__links ul li {
   display: inline-block;
-  margin: 0px 20px;
+  padding: 30px 20px;
 }
 
 .mainHeader--navigation__container .mainHeader__links ul li a {
@@ -441,16 +441,16 @@ h1 {
   width: 100%;
   font-weight: 600;
   margin: 0;
+  padding: 0px;
 }
 
 .mainHeader--navigation__container .mainHeader__links ul li ul li a {
   display: block;
   font-weight: 600;
-  padding: 12px;
-  margin-left: 8px;
   text-decoration: none;
   text-transform: none;
   color: #414141;
+  padding: 15px 24px;
 }
 
 .mainHeader--navigation__container .mainHeader__links ul li ul li a:hover {
@@ -468,6 +468,10 @@ h1 {
   display: block;
   visibility: visible;
   opacity: 1;
+}
+
+.mainHeader--navigation__container .mainHeader__links ul li:hover > a {
+  border-bottom: 4px solid #fff;
 }
 
 .mainHeader--navigation__container .mainHeader__search {

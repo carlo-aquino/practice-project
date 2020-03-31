@@ -69,7 +69,8 @@
 
             li {
                 display: inline-block;
-                margin: 0px 20px;
+                //margin: 0px 20px;
+                padding: 30px 20px;
 
                 a {
                     @include headingFont(1.6rem, #fff);
@@ -108,15 +109,15 @@
                         width: 100%;
                         font-weight: 600;
                         margin: 0;
+                        padding: 0px;
 
                         a {
                             display: block;
                             font-weight: 600;
-                            padding: 12px;
-                            margin-left: 8px;
                             text-decoration: none;
                             text-transform: none;
                             color: #414141;
+                            padding: 15px 24px;
     
                             &:hover {
                                 text-decoration: none;
@@ -136,6 +137,10 @@
                     display: block;
                     visibility: visible;
                     opacity: 1;
+                }
+
+                &:hover>a {
+                    border-bottom: 4px solid #fff;
                 }
             }
         } 
