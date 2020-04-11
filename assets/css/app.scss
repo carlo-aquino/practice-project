@@ -84,12 +84,6 @@
                     }
                 }
 
-                .active {
-                    text-decoration: none;
-                    color: #fff;
-                    border-bottom: 4px solid #fff;
-                }
-
                 ul {
                     position: absolute;
                     top: 88px;
@@ -116,12 +110,13 @@
                             text-transform: none;
                             color: #414141;
                             padding: 15px 24px;
+                            transition: 200ms transform ease-out;
     
                             &:hover {
                                 text-decoration: none;
                                 color: #fff;
-                                background: $secondaryColor;
                                 border-bottom: 0px;
+                                transform: translateX(8px);
                             }
                         }
 
@@ -137,7 +132,7 @@
                     opacity: 1;
                 }
 
-                &:hover>a {
+                &:hover > a {
                     border-bottom: 4px solid #fff;
                 }
             }
@@ -462,6 +457,7 @@
         width: 14.9%;
         height: 100%;
         padding-right: 40px;
+        cursor: pointer;
         background: rgba($secondaryColor, 0.8);
 
         img {
@@ -477,6 +473,7 @@
         width: 14.9%;
         height: 100%;
         padding-left: 40px;
+        cursor: pointer;
         background: rgba($secondaryColor, 0.8);
 
         img {

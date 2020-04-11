@@ -24,10 +24,25 @@
                 margin: 0;
             }
     
-            p {
+            .productPage--heading__breadcrumbs {
+                @include displayFlex(flex-start, center);
                 @include bodyFont(1.8rem, #fff);
                 text-transform: uppercase;
-                margin: 0;
+
+                img {
+
+                    &:nth-child(1) {
+                        margin-right: 8px;
+                    }
+
+                    &:nth-child(2) {
+                        margin: 0px 16px;
+                    }
+                }
+
+                span {
+                    font-weight: 700;
+                }
             }
         }
     }

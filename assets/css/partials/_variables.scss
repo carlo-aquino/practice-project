@@ -34,6 +34,12 @@ h1 {
   margin: 0 auto;
 }
 
+.mainHeader--links__active {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 4px solid #fff;
+}
+
 .section-heading {
   width:100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);

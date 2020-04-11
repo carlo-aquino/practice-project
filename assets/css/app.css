@@ -24,6 +24,12 @@ h1 {
   margin: 0 auto;
 }
 
+.mainHeader--links__active {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 4px solid #fff;
+}
+
 .section-heading {
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -85,13 +91,33 @@ h1 {
   margin: 0;
 }
 
-.productPage--banner .productPage--heading .productPage--heading__container p {
+.productPage--banner .productPage--heading .productPage--heading__container .productPage--heading__breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Muli", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   color: #fff;
   text-transform: uppercase;
-  margin: 0;
+}
+
+.productPage--banner .productPage--heading .productPage--heading__container .productPage--heading__breadcrumbs img:nth-child(1) {
+  margin-right: 8px;
+}
+
+.productPage--banner .productPage--heading .productPage--heading__container .productPage--heading__breadcrumbs img:nth-child(2) {
+  margin: 0px 16px;
+}
+
+.productPage--banner .productPage--heading .productPage--heading__container .productPage--heading__breadcrumbs span {
+  font-weight: 700;
 }
 
 .productPage--banner .productPage--banner__overlay {
@@ -408,12 +434,6 @@ h1 {
   border-bottom: 4px solid #fff;
 }
 
-.mainHeader--navigation__container .mainHeader__links ul li .active {
-  text-decoration: none;
-  color: #fff;
-  border-bottom: 4px solid #fff;
-}
-
 .mainHeader--navigation__container .mainHeader__links ul li ul {
   position: absolute;
   top: 88px;
@@ -446,13 +466,18 @@ h1 {
   text-transform: none;
   color: #414141;
   padding: 15px 24px;
+  -webkit-transition: 200ms -webkit-transform ease-out;
+  transition: 200ms -webkit-transform ease-out;
+  transition: 200ms transform ease-out;
+  transition: 200ms transform ease-out, 200ms -webkit-transform ease-out;
 }
 
 .mainHeader--navigation__container .mainHeader__links ul li ul li a:hover {
   text-decoration: none;
   color: #fff;
-  background: #0082d6;
   border-bottom: 0px;
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
 }
 
 .mainHeader--navigation__container .mainHeader__links ul li ul li:hover {
@@ -869,6 +894,7 @@ h1 {
   width: 14.9%;
   height: 100%;
   padding-right: 40px;
+  cursor: pointer;
   background: rgba(0, 130, 214, 0.8);
 }
 
@@ -892,6 +918,7 @@ h1 {
   width: 14.9%;
   height: 100%;
   padding-left: 40px;
+  cursor: pointer;
   background: rgba(0, 130, 214, 0.8);
 }
 
