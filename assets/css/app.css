@@ -683,6 +683,7 @@ h1 {
 }
 
 .stack02--cards__wrapper {
+  position: relative;
   margin: 5px;
   padding: 32px 9.94% 16px 9.94%;
   overflow: auto;
@@ -745,13 +746,23 @@ h1 {
 }
 
 .stack02--cards__wrapper .stack02--cards__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
   padding-top: 16px;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   overflow: auto;
+  z-index: 2;
 }
 
 .stack02--cards__wrapper .stack02--cards__footer div:nth-child(1) {
-  width: 50%;
   float: left;
 }
 
@@ -779,13 +790,13 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
   float: left;
 }
 
 .stack02--cards__wrapper .stack02--cards__footer div:nth-child(2) svg {
   width: 22px;
   height: auto;
+  margin-left: 8px;
   fill: #0082d6;
 }
 

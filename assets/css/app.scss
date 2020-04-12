@@ -296,6 +296,7 @@
 }
 
 .stack02--cards__wrapper {
+    position: relative;
     margin: 5px;
     padding: 32px 9.94% 16px 9.94%;
     overflow: auto;
@@ -330,9 +331,9 @@
 
             .default-link { 
                 position:absolute; 
-                width:100%;
-                height:100%;
-                top:0;
+                width: 100%;
+                height: 100%;
+                top: 0;
                 left: 0;
                 z-index: 1;
                 filter: alpha(opacity=0);  
@@ -342,13 +343,16 @@
     }
 
     .stack02--cards__footer {
+        @include displayFlex(flex-end, center);
+        position: relative;
         padding-top: 16px;
         border-top: 1px solid rgba(0, 0, 0, 0.08);
         overflow: auto;
+        z-index: 2;
 
         div {
             &:nth-child(1) {
-                width: 50%;
+                // width: 50%;
                 float: left;
 
                 a {
@@ -367,12 +371,13 @@
 
             &:nth-child(2) {
                 @include displayFlex(flex-end, center);
-                width: 50%;
+                // width: 50%;
                 float: left;
 
                 svg {
                     width: 22px;
                     height: auto;
+                    margin-left: 8px;
                     fill: $secondaryColor;
                 }
             }
