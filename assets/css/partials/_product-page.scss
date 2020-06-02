@@ -1,73 +1,5 @@
 @import './mixins';
 
-.productPage--banner {
-    position: relative;
-    width: 100%;
-    height: 488px;
-    background-image: url('../img/page-banner.jpg');
-    background-size: cover;
-    background-position: center center;
-
-    .productPage--heading {
-        @include displayFlex(flex-start, center);
-        position: relative;
-        height: 100%;
-        z-index: 2;
-
-        .productPage--heading__container {
-            padding-bottom: 72px;
-            padding-left: 24px;
-
-            h2 {
-                @include headingFont(5.6rem, #fff);
-                padding-bottom: 8px;
-                margin: 0;
-            }
-    
-            .productPage--heading__breadcrumbs {
-                @include displayFlex(flex-start, center);
-                @include bodyFont(1.8rem, #fff);
-                text-transform: uppercase;
-
-                img {
-
-                    &:nth-child(1) {
-                        margin-right: 8px;
-                    }
-
-                    &:nth-child(2) {
-                        margin: 0px 16px;
-                    }
-                }
-
-                span {
-                    font-weight: 700;
-                }
-            }
-        }
-    }
-
-    .productPage--banner__overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba($secondaryColor, 0.85);
-    }
-}
-
-@supports (background-blend-mode: multiply) {
-    .productPage--banner__overlay {
-        display: none;
-    }
-
-    .productPage--banner {
-        background-color: $secondaryColor;
-        background-blend-mode: multiply;
-    }
-}
-
 .productPage--card__pivot {
     width: 100%;
     position: relative;
@@ -169,6 +101,10 @@
 
     .productPage--relatedTopics__cards {
         width: 100%;
+
+        .productPage--cards__row {
+            margin: -5px;
+        }
     }
 }
 

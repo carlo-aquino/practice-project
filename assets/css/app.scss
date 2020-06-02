@@ -1,5 +1,6 @@
 @import './partials/variables';
 @import './partials/product-page';
+@import './partials/blog-page';
 @import './partials/mixins';
 
 #headerPlaceholder {
@@ -290,9 +291,13 @@
     padding: 144px 0px;
 }
 
-.stack02__cards {
-    padding-left: 0px;
-    padding-right: 0px;
+.stack02__rows {
+    margin: -5px;
+    
+    .stack02__cards {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 .stack02--cards__wrapper {
